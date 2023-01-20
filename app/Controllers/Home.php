@@ -6,6 +6,22 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('Frontend/landingpage/home.php');
+       $data = [
+            'title' => 'home',
+            'isi' => 'home',
+       ];
+        echo view('layout_user/wrapper.php',$data);
     }
+
+    public function login()
+    {
+       
+        return view('login.php');
+    }
+
+    // public function admin()
+    // {
+    //    echo 'halaman admin';
+    // }
+    
 }
