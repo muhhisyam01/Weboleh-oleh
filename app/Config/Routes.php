@@ -35,6 +35,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/login', 'Home::login');
 $routes->get('/awal', 'Admin::awal');
 $routes->get('/produk', 'Admin::produk');
+$routes->get('/tambah_produk', 'Admin::tambah_produk');
 
 
 /*

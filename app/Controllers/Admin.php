@@ -10,8 +10,7 @@ class Admin extends BaseController
             'title' => 'Halaman Awal admin',
             'buka' => 'layout_admin/admin',
       ];
-
-      echo view('layout_admin/wrapper.php',$data);
+          echo view('layout_admin/wrapper.php',$data);
     } 
 
     public function produk()
@@ -21,8 +20,15 @@ class Admin extends BaseController
         'title' => 'Halaman Awal produk',
         'buka' => 'layout_admin/produk',
       ];
-
-  echo view('layout_admin/wrapper.php',$data);
+      echo view('layout_admin/wrapper.php',$data);
     }
     
+    public function tambah_produk()
+    {
+      $data = [
+        'title' => 'Halaman Tambah Produk',
+        'buka' => 'layout_admin/tambah_produk',
+      ];
+      echo view('layout_admin/wrapper.php',$data);
+    }
 }
