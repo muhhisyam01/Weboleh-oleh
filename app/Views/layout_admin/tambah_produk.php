@@ -53,6 +53,7 @@
                                     <input type="file" class="form-control" id="inputCity">
                                 </div>
                             </div>
+                            <button class="btn btn-info">  Tambah Produk <img src="<?= base_url()?>/assets_admin/assets/icon/send.svg" alt=""></span></button>
                         </form>
                     </div>
                 </div>

@@ -20,7 +20,7 @@
         <br>
         <div class="row">
             <!-- [ basic-table ] start -->
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
                         <h5>Data Produk</h5>
@@ -30,31 +30,35 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>#</th>
-                                        <th>First Name</th>
-                                        <th>Last Name</th>
-                                        <th>Username</th>
+                                        <th>No</th>
+                                        <th>Nama Produk</th>
+                                        <th>Jenis Produk</th>
+                                        <th>Stock Produk</th>
+                                        <th>Harga Produk</th>
+                                        <th>Gambar Produk</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php 
+                                    $no = 1;
+                                        foreach ($produk as $get_produk) 
+                                        { 
+                                    ?>
                                     <tr>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
+                                       <td><?=$no++?></td>
+                                       <td><?=$get_produk['nama_produk']?></td>
+                                       <td><?=$get_produk['jenis_produk']?></td>
+                                       <td><?=$get_produk['stock']?></td>
+                                       <td><?=$get_produk['harga']?></td>
+                                       <td><?=$get_produk['gambar']?></td>
+                                       <td>
+                                            <a href="" class="btn btn-info">Edit</a>
+                                            <a href="" class="btn btn-danger">Hapus</a>
+                                       </td>
                                     </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
+                                    
+                                    <?php } ?>
                                 </tbody>
                             </table>
                         </div>

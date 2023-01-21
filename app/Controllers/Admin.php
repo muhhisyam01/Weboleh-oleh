@@ -1,9 +1,20 @@
 <?php
 
 namespace App\Controllers;
+use CodeIgniter\Controller;
+use App\Models\ProdukModel;
 
 class Admin extends BaseController
 {
+
+  protected $ProdukModel;
+
+  public function __construct()
+  {
+    $this->ProdukModel = new ProdukModel();
+  }
+
+
     public function awal()
     {
           $data = [
@@ -15,9 +26,10 @@ class Admin extends BaseController
 
     public function produk()
     {
-
-      $data = [
-        'title' => 'Halaman Awal produk',
+       
+      $data = [ 
+        'title' => 'Halaman Produk',
+        'produk' => $this->ProdukModel->get_produk(),
         'buka' => 'layout_admin/produk',
       ];
       echo view('layout_admin/wrapper.php',$data);
@@ -31,4 +43,6 @@ class Admin extends BaseController
       ];
       echo view('layout_admin/wrapper.php',$data);
     }
+
+
 }
