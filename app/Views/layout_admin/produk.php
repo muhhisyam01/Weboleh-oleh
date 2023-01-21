@@ -6,7 +6,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-12">
                         <div class="page-header-title">
-                            <h5 class="m-b-10">Bootstrap Basic Tables</h5>
+                            <h5 class="m-b-10"><?= $title; ?></h5>
                         </div>
                         
                     </div>
@@ -24,6 +24,11 @@
                 <div class="card">
                     <div class="card-header">
                         <h5>Data Produk</h5>
+                        <?php if (session()->getFlashdata()) : ?>
+                            <div class="alert alert-primary" role="alert">
+                                <?= session()->getFlashdata('pesan');?>
+						    </div>
+                       <?php endif; ?>
                     </div>
                     <div class="card-body table-border-style">
                         <div class="table-responsive">

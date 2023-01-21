@@ -44,5 +44,21 @@ class Admin extends BaseController
       echo view('layout_admin/wrapper.php',$data);
     }
 
+    public function produk_proses()
+    {
+      // dd($this->request->getVar());
+      // echo 'proses produk';
+
+      $this->ProdukModel->save([
+        'nama_produk' => $this->request->getVar('nama_produk'),
+        'jenis_produk' => $this->request->getVar('jenis_produk'),
+        'stock' => $this->request->getVar('stock'),
+        'harga' => $this->request->getVar('harga'),
+      ]);
+
+      session()->setFlashdata('pesan', 'Data Produk berhasil ditambahkan');
+      return redirect()->to('/produk');
+    }
+
 
 }

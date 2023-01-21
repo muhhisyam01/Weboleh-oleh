@@ -17,35 +17,32 @@
                 </div>
             </div>
         </div>
-        <!-- [ breadcrumb ] end -->
-        <!-- [ Main Content ] start -->
         <div class="row">
-            
-            <!-- [ form-element ] start -->
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
                         <h5>Silahkan Input Produk Anda</h5>
                     </div>
                     <div class="card-body">
-                        <form>
+                        <form role="form" action="<?=base_url('produk_proses') ?>" method="post">
+                  
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="inputEmail4">Nama Produk</label>
-                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Nama Produk">
+                                    <input type="text" class="form-control"  placeholder="Nama Produk" name="nama_produk" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="inputPassword4">Jenis Produk</label>
-                                    <input type="text" class="form-control" id="inputPassword4" placeholder="Jenis Produk">
+                                    <input type="text" class="form-control"  placeholder="Jenis Produk" name="jenis_produk" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputAddress">Stock Produk</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="Stock Produk">
+                                <input type="text" class="form-control"  placeholder="Stock Produk" name="stock" required>
                             </div>
                             <div class="form-group">
                                 <label for="inputAddress2">Harga</label>
-                                <input type="text" class="form-control" id="inputAddress2" placeholder="Harga Produk">
+                                <input type="text" class="form-control"  placeholder="Harga Produk" name="harga" required>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
@@ -58,9 +55,6 @@
                     </div>
                 </div>
             </div>
-            <!-- [ form-element ] end -->
         </div>
-        <!-- [ Main Content ] end -->
-
     </div>
 </section>
