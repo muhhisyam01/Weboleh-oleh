@@ -1,138 +1,216 @@
-<footer data-bg-color="#223645">
-        <div class="footer-top pt-115 pb-90">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="footer-widget mb-30">
-                            <div class="footer-logo mb-30">
-                                <a href="#"><img src="img/logo/logo-light.png" alt=""></a>
-                            </div>
-                            <div class="footer-text mb-40">
-                                <p>Lorem ipsum dolor sit amet consecte tur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua tepo the.</p>
-                            </div>
-                            <div class="footer-subsccribe">
-                                <h5>Subscribe</h5>
-                                <form action="#">
-                                    <input type="email" name="EMAIL" placeholder="Enter your email" required="">
-                                    <button type="submit"><i class="fal fa-rocket"></i></button>
-                                </form>
-                            </div>
-                        </div>
+<!--Start footer area-->  
+<footer class="footer-area">
+    <div class="container">
+        <div class="row">
+            <!--Start single footer widget-->
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <div class="single-footer-widget mar-btm">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="images/footer/footer-logo.png" alt="Awesome Footer Logo">
+                        </a>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-md-6">
-                        <div class="footer-widget mb-30 pl-20">
-                            <h3 class="footer-title">Departments</h3>
-                            <div class="footer-menu-2">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About us</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contact.html">FAQ</a></li>
-                                    <li><a href="contact.html">Contact us</a></li>
-                                    <li><a href="contact.html">Locations</a></li>
-                                    <li><a href="blog.html">Caregivers</a></li>
-                                    <li><a href="blog.html">New & Blog</a></li>
-                                    <li><a href="portfolio.html">Gallery</a></li>
-                                </ul>
-                            </div>
+                    <div class="our-info">
+                        <div class="text">    
+                            <p>Over 24 years experience knowledge international standards technogicaly changes & industrial systems, we are dedicated provides, Read More...</p>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 d-lg-none d-xl-block">
-                        <div class="footer-widget mb-30">
-                            <h3 class="footer-title">Latest Feed</h3>
-                            <div class="blog-feeds pr-15">
-                                <div class="signle-blog-feeds mb-20">
-                                    <div class="blog-feeds-thumb">
-                                        <a href="blog-details.html"><img src="img/blog/feeds-thumb-1.jpg" alt=""></a>
-                                    </div>
-                                    <div class="blog-feeds-text">
-                                        <h5><a href="blog-details.html">Lorem ipsum dolor sit am et, consectetur.</a></h5>
-                                        <span class="feeds-date">14 July 2019</span>
-                                    </div>
+                        <ul class="footer-contact-info">
+                            <li>
+                                <div class="icon-holder">
+                                    <span class="flaticon-technology"></span>
                                 </div>
-                                <div class="signle-blog-feeds mb-20">
-                                    <div class="blog-feeds-thumb">
-                                        <a href="blog-details.html"><img src="img/blog/feeds-thumb-2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="blog-feeds-text">
-                                        <h5><a href="blog-details.html">Lorem ipsum dolor sit am et, consectetur.</a></h5>
-                                        <span class="feeds-date">14 July 2019</span>
-                                    </div>
+                                <div class="text-holder">
+                                    <h5>+123-456-7890 & 23</h5>
                                 </div>
-                                <div class="signle-blog-feeds  mb-20">
-                                    <div class="blog-feeds-thumb">
-                                        <a href="blog-details.html"><img src="img/blog/feeds-thumb-3.jpg" alt=""></a>
-                                    </div>
-                                    <div class="blog-feeds-text">
-                                        <h5><a href="blog-details.html">Lorem ipsum dolor sit am et, consectetur.</a></h5>
-                                        <span class="feeds-date">14 July 2019</span>
-                                    </div>
+                            </li>
+                            <li>
+                                <div class="icon-holder">
+                                    <span class="flaticon-note"></span>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 d-lg-block">
-                        <div class="footer-widget mb-30">
-                            <h3 class="footer-title">Instagram</h3>
-                            <div class="footer-instagram">
-                                <ul>
-                                    <li><a href="#"><img src="img/instagram/ins1.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins2.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins3.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins4.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins5.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins6.jpg" alt=""></a></li>
-                                </ul>
-                            </div>
-                        </div>
+                                <div class="text-holder">
+                                    <h5>Mailus@inFocus.com</h5>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-holder">
+                                    <span class="flaticon-signs"></span>
+                                </div>
+                                <div class="text-holder">
+                                    <h5>24, Big St, Newyok, US 002</h5>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="footer-social-links socialicon-style-two">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="copyright-area pt-25 pb-20">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="footer-copyright">
-                            <p class="white-color">© 2020 Beakai Template by BasicTheme</p>
-                        </div>
+            <!--End single footer widget-->
+            <!--Start single footer widget-->
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <div class="single-footer-widget mar-lft mar-btm">
+                    <div class="title">
+                        <h3>Usefull Links</h3>
+                        <span class="border"></span>
                     </div>
-                    <div class="col-md-6">
-                        <div class="footer-social text-left text-md-right">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
+                    <ul class="usefull-links">
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>About Us</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Customer FAQ’s</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Testimonials</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Free Consultation</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Meet Our Team</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Our Services</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Contact Us</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Latest Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Start single footer widget-->
+            <!--Start single footer widget-->
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <div class="single-footer-widget">
+                    <div class="title">
+                        <h3>Latest News</h3>
+                        <span class="border"></span>
+                    </div>
+                    <ul class="latest-news">
+                        <li>
+                            <h4><a href="#">How to improve your business <br>consult with expert.</a></h4>
+                            <span><i class="fa fa-calendar" aria-hidden="true"></i>June 21, 2017</span>
+                        </li>
+                        <li>
+                            <h4><a href="#">Seminar for future of financial<br>planning & ideas.</a></h4>
+                            <span><i class="fa fa-calendar" aria-hidden="true"></i>April 14, 2017</span>
+                        </li>
+                        <li>
+                            <h4><a href="#">Experts advice for save money<br>in top ten easy ways.</a></h4>
+                            <span><i class="fa fa-calendar" aria-hidden="true"></i>March 06, 2017</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--End single footer widget-->
+            <!--Start single footer widget-->
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <div class="single-footer-widget martop">
+                    <div class="title">
+                        <h3>Subscribe Us</h3>
+                        <span class="border"></span>
+                    </div>
+                    <div class="newsletter-box">
+                        <p>Sign up today for hints, tips and the<br>latest product news</p>
+                        <form class="newsletter-form" action="#">
+                            <input placeholder="Email Address" type="text">
+                            <div class="envelope">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <button type="submit">Send Now</button>
+                        </form>
+                        <h5><i class="fa fa-clock-o" aria-hidden="true"></i> Mon - Satday: 09.00am to 18.00pm<br>Sunday: Closed</h5>
                     </div>
                 </div>
             </div>
+            <!--End single footer widget-->
         </div>
-    </footer>
-    <!-- Footer  -->
+    </div>
+</footer>   
+<!--End footer area-->
 
-    <!-- JS here -->
-    <script src="<?= base_url()?>/frontend/js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="<?= base_url()?>/frontend/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="<?= base_url()?>/frontend/js/popper.min.js"></script>
-    <script src="<?= base_url()?>/frontend/js/bootstrap.min.js"></script>
-    <script src="<?= base_url()?>/frontend/js/owl.carousel.min.js"></script>
-    <script src="<?= base_url()?>/frontend/js/isotope.pkgd.min.js"></script>
-    <script src="<?= base_url()?>/frontend/js/one-page-nav-min.js"></script>
-    <script src="<?= base_url()?>/frontend/js/slick.min.js"></script>
-    <script src="<?= base_url()?>/frontend/js/ajax-form.js"></script>
-    <script src="<?= base_url()?>/frontend/js/wow.min.js"></script>
-    <script src="<?= base_url()?>/frontend/js/jquery.nice-select.min.js"></script>
-    <script src="<?= base_url()?>/frontend/js/jquery.scrollUp.min.js"></script>
-    <script src="<?= base_url()?>/frontend/js/jquery.meanmenu.min.js"></script>
-    <script src="<?= base_url()?>/frontend/js/jquery.counterup.min.js"></script>
-    <script src="<?= base_url()?>/frontend/js/waypoints.min.js"></script>
-    <script src="<?= base_url()?>/frontend/js/imagesloaded.pkgd.min.js"></script>
-    <script src="<?= base_url()?>/frontend/js/jquery.magnific-popup.min.js"></script>
-    <script src="<?= base_url()?>/frontend/js/plugins.js"></script>
-    <script src="<?= base_url()?>/frontend/js/main.js"></script>
+<!--Start footer bottom area--> 
+<section class="footer-bottom-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-bottom">
+                    <div class="copyright-text pull-left">
+                        <p>Copyrights © 2017 All Rights Reserved by <a href="#">inFocus</a>.</p> 
+                    </div>
+                    <div class="footer-menu pull-right">
+                        <ul>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Condition</a></li>        
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>    
+</section> 
+<!--End footer bottom area-->  
+
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+<!-- main jQuery -->
+<script src="frontend/js/jquery.js"></script>
+<!-- Wow Script -->
+<script src="frontend/js/wow.min.js"></script>
+<!-- bootstrap -->
+<script src="frontend/js/bootstrap.min.js"></script>
+<!-- bx slider -->
+<script src="frontend/js/jquery.bxslider.min.js"></script>
+<!-- count to -->
+<script src="frontend/js/jquery.countTo.js"></script>
+<!-- owl carousel -->
+<script src="frontend/js/owl.carousel.min.js"></script>
+<!-- validate -->
+<script src="frontend/js/validation.js"></script>
+<!-- mixit up -->
+<script src="frontend/js/jquery.mixitup.min.js"></script>
+<!-- easing -->
+<script src="frontend/js/jquery.easing.min.js"></script>
+<!-- gmap helper -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHzPSV2jshbjI8fqnC_C4L08ffnj5EN3A"></script>
+<!--gmap script-->
+<script src="frontend/js/gmaps.js"></script>
+<script src="frontend/js/map-helper.js"></script>
+<!-- video responsive script -->
+<script src="frontend/js/jquery.fitvids.js"></script>
+<!-- jQuery ui js -->
+<script src="frontend/assets/jquery-ui-1.11.4/jquery-ui.js"></script>
+<!-- Language Switche  -->
+<script src="frontend/assets/language-switcher/jquery.polyglot.language.switcher.js"></script>
+<!-- fancy box -->
+<script src="frontend/js/jquery.fancybox.pack.js"></script>
+<script src="frontend/js/jquery.appear.js"></script>
+<!-- isotope script-->
+<script src="frontend/js/isotope.js"></script>
+<script src="frontend/js/jquery.prettyPhoto.js"></script> 
+<!-- jQuery timepicker js -->
+<script src="frontend/assets/timepicker/timePicker.js"></script>
+<!-- Bootstrap select picker js -->
+<script src="frontend/assets/bootstrap-sl-1.12.1/bootstrap-select.js"></script>                               
+<script src="frontend/assets/html5lightbox/html5lightbox.js"></script>
+
+<!-- revolution slider js -->
+<script src="frontend/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="frontend/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="frontend/assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="frontend/assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="frontend/assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="frontend/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="frontend/assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="frontend/assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="frontend/assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="frontend/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="frontend/assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+
+<!-- thm custom script -->
+<script src="frontend/js/custom.js"></script>
+
+
+
+
+
+
 </body>
-
 </html>
