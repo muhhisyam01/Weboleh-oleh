@@ -13,8 +13,6 @@ class Admin extends BaseController
   {
     $this->ProdukModel = new ProdukModel();
   }
-
-
     public function awal()
     {
           $data = [
