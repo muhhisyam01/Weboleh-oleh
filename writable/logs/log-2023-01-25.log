@@ -1,0 +1,246 @@
+ERROR - 2023-01-25 03:51:46 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/MySQLi/Connection.php(174): mysqli->real_connect()
+#1 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query()
+#4 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/app/Models/ProdukModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/app/Controllers/Admin.php(31): App\Models\ProdukModel->get_produk()
+#6 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(934): App\Controllers\Admin->produk()
+#7 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query()
+#3 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/app/Models/ProdukModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/app/Controllers/Admin.php(31): App\Models\ProdukModel->get_produk()
+#5 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(934): App\Controllers\Admin->produk()
+#6 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#7 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Commands/Server/rewrite.php(47): require_once('...')
+#10 {main}
+CRITICAL - 2023-01-25 03:51:46 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Models/ProdukModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Admin.php(31): App\Models\ProdukModel->get_produk()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->produk()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-01-25 03:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 03:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 03:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 03:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 03:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 03:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 03:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 03:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 03:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 03:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 04:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 08:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 08:32:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 08:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 08:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-25 08:35:07 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(571): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+ 9 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+10 SYSTEMPATH/Helpers/kint_helper.php(27): Kint\Kint::dump()
+11 APPPATH/Controllers/Admin.php(52): dd()
+12 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->produk_proses()
+13 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-01-25 08:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 08:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 08:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-25 08:37:00 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(571): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+ 9 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+10 SYSTEMPATH/Helpers/kint_helper.php(27): Kint\Kint::dump()
+11 APPPATH/Controllers/Admin.php(52): dd()
+12 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->produk_proses()
+13 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-01-25 08:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 08:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-25 08:38:24 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(185): date()
+ 2 SYSTEMPATH/ThirdParty/Kint/Zval/Representation/SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH/ThirdParty/Kint/Parser/SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct()
+ 4 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse()
+ 5 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(571): Kint\Parser\Parser->applyPlugins()
+ 6 SYSTEMPATH/ThirdParty/Kint/Parser/Parser.php(138): Kint\Parser\Parser->parseObject()
+ 7 SYSTEMPATH/ThirdParty/Kint/Kint.php(285): Kint\Parser\Parser->parse()
+ 8 SYSTEMPATH/ThirdParty/Kint/Kint.php(268): Kint\Kint->dumpVar()
+ 9 SYSTEMPATH/ThirdParty/Kint/Kint.php(575): Kint\Kint->dumpAll()
+10 SYSTEMPATH/Helpers/kint_helper.php(27): Kint\Kint::dump()
+11 APPPATH/Controllers/Admin.php(52): dd()
+12 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->produk_proses()
+13 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-01-25 09:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 09:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-25 09:01:35 --> mysqli_sql_exception: Column 'gambar_bk' cannot be null in /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query()
+#4 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Model.php(728): CodeIgniter\BaseModel->insert()
+#7 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#8 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/app/Controllers/Admin.php(64): CodeIgniter\BaseModel->save()
+#9 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(934): App\Controllers\Admin->produk_proses()
+#10 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2023-01-25 09:01:35 --> Column 'gambar_bk' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(728): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Admin.php(64): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->produk_proses()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-01-25 09:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-25 09:02:12 --> mysqli_sql_exception: Column 'gambar_bk' cannot be null in /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query()
+#4 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Model.php(728): CodeIgniter\BaseModel->insert()
+#7 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#8 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/app/Controllers/Admin.php(64): CodeIgniter\BaseModel->save()
+#9 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(934): App\Controllers\Admin->produk_proses()
+#10 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2023-01-25 09:02:12 --> Column 'gambar_bk' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(728): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Admin.php(64): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->produk_proses()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-01-25 09:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 09:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-01-25 09:02:49 --> mysqli_sql_exception: Column 'gambar_dp' cannot be null in /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query()
+#4 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Model.php(728): CodeIgniter\BaseModel->insert()
+#7 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#8 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/app/Controllers/Admin.php(60): CodeIgniter\BaseModel->save()
+#9 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(934): App\Controllers\Admin->produk_proses()
+#10 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2023-01-25 09:02:49 --> Column 'gambar_dp' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(728): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Admin.php(60): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->produk_proses()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-01-25 09:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-25 09:08:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-25 09:09:21 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH/Controllers/Admin.php(53): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->produk_proses()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')

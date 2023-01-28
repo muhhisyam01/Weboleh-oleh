@@ -37,7 +37,8 @@ $routes->get('/awal', 'Admin::awal');
 $routes->get('/produk', 'Admin::produk');
 $routes->get('/tambah_produk', 'Admin::tambah_produk');
 $routes->post('/produk_proses', 'Admin::produk_proses');
-
+$routes->get('/edit_produk/(:segment)', 'Admin::edit_produk/$1');
+$routes->get('/delete/(:segment)', 'Admin::delete/$1');
 
 /*
  * --------------------------------------------------------------------

@@ -56,10 +56,10 @@
                                        <td><?=$get_produk['jenis_produk']?></td>
                                        <td><?=$get_produk['stock']?></td>
                                        <td><?=$get_produk['harga']?></td>
-                                       <td><?=$get_produk['gambar']?></td>
+                                       <td><?=$get_produk['gambar_dp']?></td>
                                        <td>
-                                            <a href="" class="btn btn-info">Edit</a>
-                                            <a href="" class="btn btn-danger">Hapus</a>
+                                            <a href="<?= base_url('/edit_produk/'.$get_produk['id_produk']) ?>" class="btn btn-info">Edit</a>
+                                            <a href="<?= base_url('/delete/'.$get_produk['id_produk']) ?>" class="btn btn-danger">Hapus</a>
                                        </td>
                                     </tr>
                                     
