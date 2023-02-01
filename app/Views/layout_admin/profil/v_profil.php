@@ -15,7 +15,7 @@
         </div>
         <!-- [ breadcrumb ] end -->
         <!-- [ Main Content ] start -->
-        <a type="button" href="<?= base_url('tambah_produk') ?>" class="btn  btn-secondary">Tambah Data</a>
+        <a type="button" href="<?= base_url('add_profil') ?>" class="btn  btn-secondary">Tambah Data</a>
         <br>
         <br>
         <div class="row">
@@ -36,28 +36,24 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Nama Produk</th>
-                                        <th>Jenis Produk</th>
-                                        <th>Stock Produk</th>
-                                        <th>Harga Produk</th>
-                                        <th>Gambar Produk</th>
+                                        <th>Nama UMKM</th>
+                                        <th>Logo UMKM</th>
+                                        <th>Slide</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php 
+                                <?php 
                                     $no = 1;
-                                        foreach ($produk as $get_produk) { ?>
+                                        foreach ($profil as $get_profil) { ?>
                                     <tr>
                                        <td><?=$no++?></td>
-                                       <td><?=$get_produk['nama_produk']?></td>
-                                       <td><?=$get_produk['jenis_produk']?></td>
-                                       <td><?=$get_produk['stock']?></td>
-                                       <td><?=$get_produk['harga']?></td>
-                                       <td><?=$get_produk['gambar_1']?></td>
+                                       <td><?=$get_profil['nama_umkm']?></td>
+                                       <td><?=$get_profil['logo']?></td>
+                                       <td><?=$get_profil['slide_1']?></td>
                                        <td>
-                                            <a href="<?= base_url('/detail_produk/'.$get_produk['id_produk']) ?>" class="btn btn-info">Detail</a>
-                                            <a href="<?= base_url('/delete/'.$get_produk['id_produk']) ?>" class="btn btn-danger">Hapus</a>
+                                            <a href="<?= base_url('/edit_profil/'.$get_profil['id_profil']) ?>" class="btn btn-info">Detail</a>
+                                            <a href="<?= base_url('/delete_profil/'.$get_profil['id_profil']) ?>" class="btn btn-danger">Hapus</a>
                                        </td>
                                     </tr>
                                     

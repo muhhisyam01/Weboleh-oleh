@@ -35,13 +35,16 @@
 					    <label>Produk</label>
 					</li>
 					<li class="nav-item pcoded-hasmenu">
-					    <a href="<?= base_url('produk')?>" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Produk</span></a>
+					    <a href="<?= base_url('produk')?>" class="nav-link "><span class="pcoded-micon"><i class="feather icon-"></i></span><span class="pcoded-mtext">Produk</span></a>
 					</li>
 					<!-- <li class="nav-item pcoded-menu-caption">
 					    <label>Profil</label>
 					</li> -->
 					<li class="nav-item pcoded-hasmenu">
-					    <a href="<?= base_url('profil')?>" class="nav-link "><span class="pcoded-micon"><i class="feather icon-people"></i></span><span class="pcoded-mtext">Profil</span></a>
+					    <a href="<?= base_url('profil')?>" class="nav-link "><span class="pcoded-micon"><i class="feather icon-"></i></span><span class="pcoded-mtext">Profil</span></a>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="<?= base_url('kegiatan')?>" class="nav-link "><span class="pcoded-micon"><i class="feather icon-"></i></span><span class="pcoded-mtext">Kegiatan</span></a>
 					</li>
 				</ul>
 				

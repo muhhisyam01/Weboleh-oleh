@@ -15,7 +15,7 @@
         </div>
         <!-- [ breadcrumb ] end -->
         <!-- [ Main Content ] start -->
-        <a type="button" href="<?= base_url('tambah_produk') ?>" class="btn  btn-secondary">Tambah Data</a>
+        <a type="button" href="<?= base_url('add_kegiatan') ?>" class="btn  btn-secondary">Tambah Data</a>
         <br>
         <br>
         <div class="row">
@@ -36,31 +36,24 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Nama Produk</th>
-                                        <th>Jenis Produk</th>
-                                        <th>Stock Produk</th>
-                                        <th>Harga Produk</th>
-                                        <th>Gambar Produk</th>
+                                        <th>Nama Kegiatan</th>
+                                        <th>Deskripsi </th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php 
+                                <?php 
                                     $no = 1;
-                                        foreach ($produk as $get_produk) { ?>
+                                        foreach ($kegiatan as $get_kegiatan) { ?>
                                     <tr>
                                        <td><?=$no++?></td>
-                                       <td><?=$get_produk['nama_produk']?></td>
-                                       <td><?=$get_produk['jenis_produk']?></td>
-                                       <td><?=$get_produk['stock']?></td>
-                                       <td><?=$get_produk['harga']?></td>
-                                       <td><?=$get_produk['gambar_1']?></td>
+                                       <td><?=$get_kegiatan['nama_kegiatan']?></td>
+                                       <td><?=$get_kegiatan['deskripsi']?></td>
                                        <td>
-                                            <a href="<?= base_url('/detail_produk/'.$get_produk['id_produk']) ?>" class="btn btn-info">Detail</a>
-                                            <a href="<?= base_url('/delete/'.$get_produk['id_produk']) ?>" class="btn btn-danger">Hapus</a>
+                                            <a href="<?= base_url('/detail_kegiatan/'.$get_kegiatan['id_kegiatan']) ?>" class="btn btn-info">Detail</a>
+                                            <a href="<?= base_url('/delete_kegiatan/'.$get_kegiatan['id_kegiatan']) ?>" class="btn btn-danger">Hapus</a>
                                        </td>
                                     </tr>
-                                    
                                     <?php } ?>
                                 </tbody>
                             </table>

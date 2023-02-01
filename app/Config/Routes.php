@@ -43,8 +43,31 @@ $routes->get('/awal', 'Admin::awal');
 $routes->get('/produk', 'Admin::produk');
 $routes->get('/tambah_produk', 'Admin::tambah_produk');
 $routes->post('/produk_proses', 'Admin::produk_proses');
-$routes->get('/edit_produk/(:segment)', 'Admin::edit_produk/$1');
+$routes->get('/detail_produk/(:segment)', 'Admin::detail_produk/$1');
 $routes->get('/delete/(:segment)', 'Admin::delete/$1');
+$routes->post('/ubah/(:segment)', 'Admin::ubah/$1');
+
+// untuk profil
+$routes->get('/profil', 'Profil::profil');
+$routes->get('/add_profil', 'Profil::add_profil');
+$routes->post('/proses_profil', 'Profil::proses_profil');
+$routes->get('/edit_profil/(:segment)', 'Profil::edit_profil/$1');
+// proses ubah profil
+$routes->post('/proses_ubah/(:any)', 'Profil::proses_ubah/$1');
+$routes->get('/delete_profil/(:segment)', 'Profil::delete_profil/$1');
+
+// untuk kegiatan
+$routes->get('/kegiatan', 'Kegiatan::kegiatan');
+$routes->get('/add_kegiatan', 'Kegiatan::add_kegiatan');
+$routes->post('/proses_kegiatan', 'Kegiatan::proses_kegiatan');
+$routes->get('/detail_kegiatan/(:segment)', 'Kegiatan::detail_kegiatan/$1');
+$routes->get('/delete_kegiatan/(:segment)', 'Kegiatan::delete_kegiatan/$1');
+
+
+
+
+
+
 
 /*
  * --------------------------------------------------------------------

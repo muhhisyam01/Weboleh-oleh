@@ -56,16 +56,40 @@ class Admin extends BaseController
         'stock' => 'required',
         'harga' => 'required',
         'keterangan' => 'required',
-        'gambar_dp' => [
-          'rules' => 'uploaded[gambar_dp]|is_image[gambar_dp]|mime_in[gambar_dp,image/jpg,image/jpeg,image/png]',
+        'gambar_1' => [
+          'rules' => 'uploaded[gambar_1]|is_image[gambar_1]|mime_in[gambar_1,image/jpg,image/jpeg,image/png]',
           'errors' => [
             'uploaded' => 'pilih gambar terlebih dahulu',
             'is_image' => 'yang anda pilih buka gambar',
             'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
             ]
           ],
+        'gambar_2' => [
+            'rules' => 'uploaded[gambar_2]|is_image[gambar_2]|mime_in[gambar_2,image/jpg,image/jpeg,image/png]',
+            'errors' => [
+              'uploaded' => 'pilih gambar terlebih dahulu',
+              'is_image' => 'yang anda pilih buka gambar',
+              'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
+              ]
+            ],
+        'gambar_3' => [
+              'rules' => 'uploaded[gambar_3]|is_image[gambar_3]|mime_in[gambar_3,image/jpg,image/jpeg,image/png]',
+              'errors' => [
+                'uploaded' => 'pilih gambar terlebih dahulu',
+                'is_image' => 'yang anda pilih buka gambar',
+                'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
+                ]
+              ],
+        'gambar_4' => [
+                'rules' => 'uploaded[gambar_4]|is_image[gambar_4]|mime_in[gambar_4,image/jpg,image/jpeg,image/png]',
+                'errors' => [
+                  'uploaded' => 'pilih gambar terlebih dahulu',
+                  'is_image' => 'yang anda pilih buka gambar',
+                  'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
+                  ]
+                ],
           
-        // 'gambar_dp' => 'uploaded[gambar_dp]',
+        // 'gambar_1' => 'uploaded[gambar_1]',
          
       ])) {
         // $validation = \Config\Services::validation();
@@ -76,16 +100,23 @@ class Admin extends BaseController
 
       // ambil gambar
 
-      $gambar_dp = $this->request->getFile('gambar_dp');
+      $gambar_1 = $this->request->getFile('gambar_1');
+      $gambar_2 = $this->request->getFile('gambar_2');
+      $gambar_3 = $this->request->getFile('gambar_3');
+      $gambar_4 = $this->request->getFile('gambar_4');
       // $gambar_bk = $this->request->getFile('gambar_bk');
       // dd($gambar_bk);
 
       // pindahkan file kefolder img
-      $gambar_dp->move('img');
-      // $gambar_bk->move('img');
+      $gambar_1->move('img/produk');
+      $gambar_2->move('img/produk');
+      $gambar_3->move('img/produk');
+      $gambar_4->move('img/produk');
       // ambil nama file 
-      $gambar_dp = $gambar_dp->getName();
-      // $gambar_bk = $gambar_bk->getName();
+      $gambar_1 = $gambar_1->getName();
+      $gambar_2 = $gambar_2->getName();
+      $gambar_3 = $gambar_3->getName();
+      $gambar_4 = $gambar_4->getName();
 
       $this->ProdukModel->save([
         'nama_produk' => $this->request->getVar('nama_produk'),
@@ -93,24 +124,22 @@ class Admin extends BaseController
         'stock' => $this->request->getVar('stock'),
         'harga' => $this->request->getVar('harga'),
         'keterangan' => $this->request->getVar('keterangan'),
-        'gambar_dp' => $gambar_dp,
-        // 'gambar_bk' => $gambar_bk,
-        // 'gambar_bk' => $this->request->getFile('gambar_bk'),
-        // 'gambar_kr' => $this->request->getFile('gambar_kr'),
-        // 'gambar_kn' => $this->request->getFile('gambar_kn'),
-        // 'gambar_isi' => $this->request->getFile('gambar_isi'),
+        'gambar_1' => $gambar_1,
+        'gambar_2' => $gambar_2,
+        'gambar_3' => $gambar_3,
+        'gambar_4' => $gambar_4,
       ]);
       session()->setFlashdata('pesan', 'Data Produk berhasil ditambahkan');
       return redirect()->to('/produk');
     }
 
-    public function edit_produk($id_produk)
+    public function detail_produk($id_produk)
     {
       $data = [
         'title' => 'Halaman Edit Produk',
         // 'produk' => $this->ProdukModel->edit_produk($id_produk),
         'produk_edit' => $this->ProdukModel->edit_produk($id_produk),
-        'buka' => 'layout_admin/edit_produk',
+        'buka' => 'layout_admin/detail_produk',
         'validation' => \Config\Services::validation()
       ];
       echo view('layout_admin/wrapper.php',$data);
@@ -123,6 +152,23 @@ class Admin extends BaseController
       return redirect()->to('/produk');
      
     }
+
+    // public function ubah($id_produk)
+    // {
+    //   $data = [
+    //     'nama_produk' => $this->request->getVar('nama_produk'),
+    //     'jenis_produk' => $this->request->getVar('jenis_produk'),
+    //     'stock' => $this->request->getVar('stock'),
+    //     'harga' => $this->request->getVar('harga'),
+    //     'keterangan' => $this->request->getVar('keterangan'),
+    //     'gambar_1' => $this->request->getVar('gambar_1'),
+    //   ];
+    //   $this->ProdukModel->update_produk($id_produk, $data);
+    //   session()->setFlashdata('pesan', 'Data Produk berhasil ubah');
+    //   return redirect()->to('/produk');
+    // }
+
+    
 
 
 

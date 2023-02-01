@@ -7,7 +7,7 @@ class ProdukModel extends Model
 {
 
     protected $table = 'produk';
-    protected $allowedFields = ['nama_produk', 'jenis_produk','stock','harga','keterangan','gambar_dp','gambar_bk','gambar_kr','gambar_kn','gambar_isi'];
+    protected $allowedFields = ['nama_produk', 'jenis_produk','stock','harga','keterangan','gambar_1','gambar_2','gambar_3','gambar_4'];
 
     public function get_produk()
     {
@@ -23,5 +23,10 @@ class ProdukModel extends Model
     public function hapus($id_produk)
     {
         return $this->db->table('produk')->where('id_produk',$id_produk)->delete();       
+    }
+
+    public function update_produk($id_produk, $data)
+    {
+        return $this->db->table('produk')->where(['id_produk' => $id_produk])->set($data)->update();       
     }
 }

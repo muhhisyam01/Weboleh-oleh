@@ -41,7 +41,7 @@
                                         Keterangan
                                     </li>
                                     <li>
-                                        Gambar Depan
+                                        Semua Gambar
                                     </li>
                                 </ul>
                             </li>
@@ -76,25 +76,21 @@
                             
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="inputAddress2">Gambar dari depan</label>
-                                    <input type="file" class="form-control" name="gambar_dp" id="gambar_dp" >
-                                </div>
-                                <!-- <div class="form-group col-md-6">
-                                    <label for="gambar_bk">Gambar Depan Belakang</label>
-                                    <input type="file" class="form-control" name="gambar_bk" id="gambar_bk" >
+                                    <label for="inputAddress2">Gambar 1</label>
+                                    <input type="file" class="form-control" name="gambar_1" id="gambar_1" >
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="gambar_kr">Gambar Depan Kiri</label>
-                                    <input type="file" class="form-control" name="gambar_kr" id="gambar_kr" >
+                                    <label for="gambar_2">Gambar 2</label>
+                                    <input type="file" class="form-control" name="gambar_2" id="gambar_2" >
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="gambar_kn">Gambar Depan Kanan</label>
-                                    <input type="file" class="form-control" name="gambar_kn" id="gambar_kn" >
+                                    <label for="gambar_3">Gambar 3</label>
+                                    <input type="file" class="form-control" name="gambar_3" id="gambar_3" >
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="gambar_isi">Gambar Depan Isi</label>
-                                    <input type="file" class="form-control" name="gambar_isi" id="gambar_isi" >
-                                </div> -->
+                                    <label for="gambar_4">Gambar 4</label>
+                                    <input type="file" class="form-control" name="gambar_4" id="gambar_4" >
+                                </div>
                             </div>
                             <button class="btn btn-info">  Tambah Produk <img src="<?= base_url()?>/assets_admin/assets/icon/send.svg" alt=""></span></button>
                         </form>
