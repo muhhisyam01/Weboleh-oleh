@@ -1,14 +1,27 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\KegiatanModel;
+use App\Models\ProfilModel;
+
 
 class Home extends BaseController
 {
+    protected $KegiatanModel;
+    protected $ProfilModel;
+
+    public function __construct()
+     {
+          $this->KegiatanModel = new KegiatanModel();
+          $this->ProfilModel = new ProfilModel();
+     }
+
     public function index()
     {
        $data = [
             'title' => 'home',
             'isi' => 'home',
+            'profil' => $this->ProfilModel->get_profil()
        ];
         echo view('layout_user/wrapper.php',$data);
     }
@@ -71,5 +84,8 @@ class Home extends BaseController
        ];
         echo view('layout_user/wrapper.php',$data);
     }
+     
+    // untuk tampilan Home
+      
     
 }

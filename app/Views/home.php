@@ -3,8 +3,11 @@
 <section class="rev_slider_wrapper">
     <div id="slider1" class="rev_slider"  data-version="5.0">
         <ul>
+            <?php 
+                foreach ($profil as $get_profil) { ?>
             <li data-transition="fade">
-                <img src="frontend/images/slides/home.jpeg"  alt="" width="1920" height="700" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
+            <!-- <img src=""  alt="" width="1920" height="700" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1"> -->
+                <img src="<?= base_url()."/img/profil/".$get_profil['slide_1'] ?>"  alt="" width="100" height="200" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
                 
                 <div class="tp-caption  tp-resizeme" 
                     data-x="left" data-hoffset="0" 
@@ -19,45 +22,20 @@
                     data-start="700">
                     
                     <div class="slide-content left-slide">
-                        <div class="title">Get First Class</div>
-                        <div class="big-title">Business Advice</div>
+                        <div class="title"><?= $get_profil['nama_umkm'] ?></div>
+                        <!-- <div class="big-title">Business Advice</div>
                         <div class="text">With over 10 years of experience helping businesses<br>to find comprehensive solutions.</div>
                         <div class="btns-box">
                             <a href="frontend/about.html" class="thm-btn pdone">Read More</a>&ensp; 
                             <a href="frontend/contact.html" class="thm-btn btn-style-two pdtwo">Contact Us</a> 
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </li>
             <li data-transition="fade">
-                <img src="images/slides/2.jpg" alt="" width="1920" height="700" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
+            <!-- <img src=""  alt="" width="1920" height="700" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1"> -->
+                <img src="<?= base_url()."/img/profil/".$get_profil['slide_2'] ?>"  alt="" width="100" height="200" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
                 
-               <div class="tp-caption  tp-resizeme" 
-                    data-x="right" data-hoffset="0" 
-                    data-y="top" data-voffset="370" 
-                    data-transform_idle="o:1;"         
-                    data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
-                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
-                    data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
-                    data-splitin="none" 
-                    data-splitout="none"
-                    data-responsive_offset="on"
-                    data-start="1500">
-                    
-                    <div class="slide-content right-slide">
-                        <div class="title">Marketing Strategy &</div>
-                        <div class="big-title">Industry Analysis</div>
-                        <div class="text">With over 10 years of experience helping businesses<br>to find comprehensive solutions.</div>
-                        <div class="btns-box">
-                            <a href="About" class="thm-btn pdone">Read More</a>&ensp; 
-                            <a href="Contact" class="thm-btn btn-style-two pdtwo">Contact Us</a> 
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li data-transition="fade">
-                <img src="frontend/images/slides/3.jpg"  alt="" width="1920" height="700" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
- 
                 <div class="tp-caption  tp-resizeme" 
                     data-x="left" data-hoffset="0" 
                     data-y="top" data-voffset="370" 
@@ -68,19 +46,32 @@
                     data-splitin="none" 
                     data-splitout="none"
                     data-responsive_offset="on"
-                    data-start="1500">
+                    data-start="700">
                     
-                    <div class="slide-content left-slide">
-                        <div class="title">The Best Theme For</div>
-                        <div class="big-title">Consulting Agency</div>
-                        <div class="text">With over 10 years of experience helping businesses<br>to find comprehensive solutions.</div>
-                        <div class="btns-box">
-                            <a href="About" class="thm-btn pdone">Read More</a>&ensp; 
-                            <a href="Contact" class="thm-btn btn-style-two pdtwo">Contact Us</a> 
-                        </div>
-                    </div>
+                    
                 </div>
             </li>
+
+            <li data-transition="fade">
+            <!-- <img src=""  alt="" width="1920" height="700" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1"> -->
+                <img src="<?= base_url()."/img/profil/".$get_profil['slide_3'] ?>"  alt="" width="100" height="200" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
+                
+                <div class="tp-caption  tp-resizeme" 
+                    data-x="left" data-hoffset="0" 
+                    data-y="top" data-voffset="370" 
+                    data-transform_idle="o:1;"         
+                    data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;" 
+                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+                    data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
+                    data-splitin="none" 
+                    data-splitout="none"
+                    data-responsive_offset="on"
+                    data-start="700">
+                </div>
+            </li>
+
+            <?php } ?>
+            
         </ul>
     </div>
 </section>
@@ -127,7 +118,6 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="sec-title text-center">
-                        <span class="color-2">What We Do</span>
                         <div class="border center color-2"></div> 
                         <h1>Services</h1>
                     </div>
@@ -145,8 +135,8 @@
                 </div>
                 <div class="text-holder">
                     <h3><a href="service-single.html">Pembuatan Legalitas UKM</a></h3> 
-                    <p>Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete.</p>
-                    <a class="readmore" href="frontend/service-single.html">Read More<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
+                    <p>Penjelasan Legalitas UKM</p>
+                    <a class="readmore" href="frontend/service-single.html">Selanjutnya<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
                 </div>    
             </div>    
             <!--Start single service item-->
@@ -160,8 +150,8 @@
                 </div>
                 <div class="text-holder">
                     <h3><a href="frontend/service-single.html">Pusat Oleh-Oleh Mamuju Sulbar</a></h3> 
-                    <p>The great explorer of the truth, the master-builder of human happiness no one rejects, dislikes, or avoids pleasure itself pleasure.</p>
-                    <a class="readmore" href="frontend/service-single.html">Read More<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
+                    <p>Penejelasan Pusat Oleh-Oleh Mamuju Sulbar</p>
+                    <a class="readmore" href="frontend/service-single.html">Selanjutnya<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
                 </div>    
             </div>    
             <!--Start single service item-->
@@ -175,8 +165,9 @@
                 </div>
                 <div class="text-holder">
                     <h3><a href="service-single.html">Pembuatan Website</a></h3> 
-                    <p>There anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances.</p>
-                    <a class="readmore" href="service-single.html">Read More<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
+                    <p>Kami Menyediakan Service Pembuatan WEBSITE bagi rekan-rekan pelaku usaha UMKM yang ingin go DIGITAL sehingga 
+                        mempermudah dalam promosi.</p>
+                    <a class="readmore" href="service-single.html">Selanjutnya<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
                 </div>    
             </div>    
             <!--Start single service item-->
@@ -192,8 +183,8 @@
                 </div>
                 <div class="text-holder">
                     <h3><a href="service-single.html">Pembuatan Toko Online</a></h3> 
-                    <p>System and expound the actual teachings of the great explorer of the truth, the master-builder of human seds happiness.</p>
-                    <a class="readmore" href="service-single.html">Read More<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
+                    <p>Penjelasan Toko Online</p>
+                    <a class="readmore" href="service-single.html">Selanjutnya<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
                 </div>    
             </div>    
             <!--Start single service item-->
@@ -207,13 +198,13 @@
                 </div>
                 <div class="text-holder">
                     <h3><a href="service-single.html">Informasi Komoditas Sulawesi Barat</a></h3> 
-                    <p>Ever under laborious physical exercise, except to obtain some advantage from it but who has any right to find fault with a man.</p>
-                    <a class="readmore" href="service-single.html">Read More<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
+                    <p>Penjelasan Informasi Komoditas Sulawesi Barat</p>
+                    <a class="readmore" href="service-single.html">Selanjutnya<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
                 </div>    
             </div>    
             <!--Start single service item-->
             <!--Start single service item-->
-            <div class="single-service-item bg-one">
+            <!-- <div class="single-service-item bg-one">
                 <div class="icon-holder">
                     <span class="flaticon-upload"></span>
                     <div class="overlay-icon">
@@ -225,7 +216,7 @@
                     <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally.</p>
                     <a class="readmore" href="service-single.html">Read More<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
                 </div>    
-            </div>    
+            </div>     -->
             <!--Start single service item-->
         </div>
     </div>
@@ -233,7 +224,7 @@
 <!--End services area-->
 
 <!--Start fact counter area-->
-<section class="fact-counter-area sec-pd-one" style="background-image:url(frontend/images/resources/fact-counter-bg.jpg);">
+<section class="fact-counter-area sec-pd-one" style="background-image:url(fronten/images/resources/fact-counter-bg.jpg);">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -243,9 +234,11 @@
                             <span class="flaticon-pen"></span>
                         </div>
                         <div class="count-box">
-                            <h1><span class="timer" data-from="1" data-to="2745" data-speed="5000" data-refresh-interval="50">2745</span></h1>
+                            <!-- <h1><span class="timer" data-from="1" data-to="200" data-speed="200" data-refresh-interval="50">200</span></h1> -->
                             <div class="overlay-title">
-                                <h3>Projects</h3>
+                                <h3>200</h3>
+                                <hr>
+                                <h3>Pelaku UMKM Tersebar di Mamuju</h3>
                             </div>
                         </div>
                     </li>
@@ -254,9 +247,11 @@
                             <span class="flaticon-people"></span>
                         </div>
                         <div class="count-box">
-                            <h1><span class="timer" data-from="1" data-to="389" data-speed="5000" data-refresh-interval="50">389</span></h1>
+                            <!-- <h1><span class="timer" data-from="1" data-to="389" data-speed="5000" data-refresh-interval="50">389</span></h1> -->
                             <div class="overlay-title">
-                                <h3>Experts</h3>
+                                <h3>200</h3>
+                                <hr>
+                                <h3>Data Selanjutnya</h3>
                             </div>
                         </div>
                     </li>
@@ -265,9 +260,11 @@
                             <span class="flaticon-smile"></span>
                         </div>
                         <div class="count-box">
-                            <h1><span class="timer" data-from="1" data-to="1564" data-speed="5000" data-refresh-interval="50">1564</span></h1>
+                            <!-- <h1><span class="timer" data-from="1" data-to="1564" data-speed="5000" data-refresh-interval="50">1564</span></h1> -->
                             <div class="overlay-title">
-                                <h3>Satisfied</h3>
+                                <h3>200</h3>
+                                <hr>
+                                <h3>Data Selanjutnya</h3>
                             </div>
                         </div>
                     </li>
@@ -276,9 +273,11 @@
                             <span class="flaticon-medal"></span>
                         </div>
                         <div class="count-box">
-                            <h1><span class="timer" data-from="1" data-to="172" data-speed="5000" data-refresh-interval="50">172</span></h1>
+                            <!-- <h1><span class="timer" data-from="1" data-to="172" data-speed="5000" data-refresh-interval="50">172</span></h1> -->
                             <div class="overlay-title">
-                                <h3>Awards</h3>
+                                <h3>200</h3>
+                                <hr>
+                                <h3>Data Selanjutnya</h3>
                             </div>
                         </div>
                     </li>
@@ -302,40 +301,40 @@
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                 <div class="faq-content-box">
                     <div class="sec-title">
-                        <span>Clarify Your Doubts</span>
+                        <span>Silahkan baca terlebih dahulu</span>
                         <div class="border"></div> 
-                        <h1>Answers For Questions</h1>
+                        <h1>Pertanyaan yang sering muncul</h1>
                     </div>
                     <div class="accordion-box">
                         <!--Start single accordion box-->
                         <div class="accordion accordion-block">
-                            <div class="accord-btn"><h4>How to purchase infocus theme?</h4></div>
+                            <div class="accord-btn"><h4>Bagaimana cara membeli?</h4></div>
                             <div class="accord-content">
-                                <p>Over 20 years of experience we’ll ensure you always get the best guidance. We serve a clients at every sed level of their organization we can be most useful.</p>
+                                <p>Jawaban disini</p>
                             </div>
                         </div>
                         <!--End single accordion box-->
                         <!--Start single accordion box-->
                         <div class="accordion accordion-block">
-                            <div class="accord-btn active"><h4>What are the main features of infocus?</h4></div>
+                            <div class="accord-btn active"><h4>Bagaimana Cara ...?</h4></div>
                             <div class="accord-content collapsed">
-                                <p>Over 20 years of experience we’ll ensure you always get the best guidance. We serve a clients at every sed level of their organization we can be most useful.</p>
+                                <p>Jawaban disini</p>
                             </div>
                         </div>
                         <!--End single accordion box-->
                         <!--Start single accordion box-->
                         <div class="accordion accordion-block">
-                            <div class="accord-btn"><h4>Wanna talk to our experts?</h4></div>
+                            <div class="accord-btn"><h4>Bagaimana Cara ....?</h4></div>
                             <div class="accord-content">
-                                <p>Over 20 years of experience we’ll ensure you always get the best guidance. We serve a clients at every sed level of their organization we can be most useful.</p>
+                                <p>Jawab disini</p>
                             </div>
                         </div>
                         <!--End single accordion box-->
                         <!--Start single accordion box-->
                         <div class="accordion accordion-block">
-                            <div class="accord-btn"><h4>What is the procedure to join with us?</h4></div>
+                            <div class="accord-btn"><h4>Bagaimana Cara ...?</h4></div>
                             <div class="accord-content">
-                                <p>Over 20 years of experience we’ll ensure you always get the best guidance. We serve a clients at every sed level of their organization we can be most useful.</p>
+                                <p>Jawab disini.</p>
                             </div>
                         </div>
                         <!--End single accordion box-->
@@ -345,35 +344,35 @@
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                 <div class="appointment-box">
                     <div class="sec-title">
-                        <span>For Enquiry</span>
+                        <span>Form Pertanyaan</span>
                         <div class="border"></div> 
-                        <h1>Make an Appointment</h1>
+                        <h1>Ajukan pertanyaan Anda</h1>
                     </div>
                     <form class="appointment-form">
                         <div class="row">
                             <div class="col-md-6">   
-                                <input type="text" name="form_name" value="" placeholder="Your Name*" required="">
+                                <input type="text" name="form_name" value="" placeholder="Nama Anda*" required="">
                             </div>
                             <div class="col-md-6">
-                                <input type="email" name="form_email" value="" placeholder="Email*" required="">
+                                <input type="email" name="form_email" value="" placeholder="Email Anda*" required="">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">   
-                                <input type="text" name="form_phone" value="" placeholder="Phone Number">
+                                <input type="text" name="form_phone" value="" placeholder="Nomor Telpon Anda">
                             </div>
                             <div class="col-md-6">
-                                <input type="text" name="form_subject" value="" placeholder="Subject">
+                                <input type="text" name="form_subject" value="" placeholder="Kategori Pertanyaan">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <textarea name="form_message" placeholder="Message*" required=""></textarea>   
+                                <textarea name="form_message" placeholder="Pertanyaan Anda*" required=""></textarea>   
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <button class="thm-btn" type="submit">Submit Now</button>
+                                <button class="thm-btn" type="submit">Kirim</button>
                             </div>
                         </div>
                         
@@ -394,9 +393,9 @@
 <section class="latest-blog-area sec-pd-one">
     <div class="container">
         <div class="sec-title">
-            <span>Our News</span>
+            <span>Kegiatan</span>
             <div class="border"></div> 
-            <h1>Latest From Blog</h1>
+            <h1>Berita terbaru</h1>
         </div>
         <div class="row">
             <!--Start single latest blog-->
@@ -412,79 +411,28 @@
                             </div>
                         </div>
                     </div>
+                    <hr>
                     <div class="text-holder">
-                        <span>Written By</span>
-                        <ul class="meta-info">
+                        <!-- <span>Written By</span> -->
+                        <!-- <ul class="meta-info">
                             <li><a href="#">Mark Fletcher, 17th Aug 2017</a></li>
-                        </ul>
-                        <h3><a class="blog-title" href="blog-single.html">Tips for successfull business</a></h3> 
+                        </ul> -->
+                        <h3><a class="blog-title" href="blog-single.html">Kegiatan terbaru </a></h3> 
                         <div class="text">
-                            <p>Rationally encounter consequences seds utthat are extremely painful nore us again were anyone who loves desires.</p>
+                            <p>Penjelasan Kegiatan</p>
                         </div>
                         <div class="readmore">
-                            <a href="blog-single.html">Read More</a>    
+                            <a href="blog-single.html">Selanjutnya</a>    
                         </div>
                     </div>
                 </div>
             </div>
             <!--End single latest blog-->
             <!--Start single latest blog-->
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                <div class="single-blog-post">
-                    <div class="img-holder">
-                        <img src="frontend/images/blog/lat-blog-2.jpg" alt="Awesome Image">
-                        <div class="overlay-style-one">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-holder">
-                        <span>Written By</span>
-                        <ul class="meta-info">
-                            <li><a href="#">Daniel Martin, 21st May 2017</a></li>
-                        </ul>
-                        <h3><a class="blog-title" href="blog-single.html">Improve your employee skills</a></h3> 
-                        <div class="text">
-                            <p>Pursues or desires to obtain pain of itself because it is pain, but because occasionally can procure great pleasure.</p>
-                        </div>
-                        <div class="readmore">
-                            <a href="blog-single.html">Read More</a>    
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <!--End single latest blog-->
             <!--Start single latest blog-->
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                <div class="single-blog-post">
-                    <div class="img-holder">
-                        <img src="frontend/images/blog/lat-blog-1.jpg" alt="Awesome Image">
-                        <div class="overlay-style-one">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-holder">
-                        <span>Written By</span>
-                        <ul class="meta-info">
-                            <li><a href="#">Venanda Spin, 08th Apr 2017</a></li>
-                        </ul>
-                        <h3><a class="blog-title" href="blog-single.html">Budget hacks for accounting</a></h3> 
-                        <div class="text">
-                            <p>To take a trivial example, which of us ever undertake laborious physical exercise sed except to obtain some advantage.</p>
-                        </div>
-                        <div class="readmore">
-                            <a href="blog-single.html">Read More</a>    
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <!--End single latest blog-->
         </div>
     </div>
@@ -495,9 +443,9 @@
 <section class="brand-area">
     <div class="container">
         <div class="sec-title text-center">
-            <span>Who Trust Us</span>
+            <span>Daftar Kerja Sama</span>
             <div class="border center"></div> 
-            <h1>Our Trusted Partners</h1>
+            <h1>Kami Bekerja Sama Dengan</h1>
         </div>
         <div class="row">
             <div class="col-md-12">

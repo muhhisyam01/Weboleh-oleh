@@ -22,7 +22,9 @@ class KegiatanModel extends Model
 
     public function hapus($id_kegiatan)
     {
-        $this->db->table('tb_kegiatan')->where('id_kegiatan',$id_kegiatan)->delete();       
+        // $this->db->table('tb_kegiatan')->where('id_kegiatan',$id_kegiatan)->delete();
+        $this->db->table('tb_kegiatan')->where('id_kegiatan',$id_kegiatan);       
+         
     }
 
     

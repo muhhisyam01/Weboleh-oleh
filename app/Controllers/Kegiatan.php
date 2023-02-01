@@ -103,14 +103,22 @@ class Kegiatan extends BaseController
 
     public function delete_kegiatan($id_kegiatan)
     {
+
       $this->KegiatanModel->hapus($id_kegiatan);
       session()->setFlashdata('pesan', 'Data Kegiatan berhasil di Hapus');
       return redirect()->to('/kegiatan');
+
+      // $kegiatanModel = new KegiatanModel();
+
+      // $data = $kegiatanModel->find($id_kegiatan);
+      // echo $data['foto_1'];
+      // $ambilFile = $data['foto_1'];
+      // if(file_exists("img/kegiatan".$ambilFile)){
+      //   unlink("img/kegiatan".$ambilFile);
+      // }
+      // $kegiatanModel->delete($id_kegiatan);
+      // session()->setFlashdata('pesan', 'Data Kegiatan berhasil di Hapus');
+      // return redirect()->to('/kegiatan');
     }
-    
-
-
-
-    
     
 }

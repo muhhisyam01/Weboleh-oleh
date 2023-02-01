@@ -44,10 +44,6 @@
                                     <label for="foto_2">Foto 2</label>
                                     <input type="file" class="form-control" name="foto_2" id="foto_2" >
                                 </div>
-                                <div class="form-group col-md-6">
-                                    <label for="foto_3">Foto 3</label>
-                                    <input type="file" class="form-control" name="foto_3" id="foto_3" >
-                                </div>
                             </div>
                             <button class="btn btn-info">  Tambah Kegiatan <img src="<?= base_url()?>/assets_admin/assets/icon/send.svg" alt=""></span></button>
                         </form>
