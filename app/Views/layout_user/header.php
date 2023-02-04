@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Home || infocus || Responsive HTML 5 Template</title>
+	<title>Rumah Bumn Mamuju</title>
 
 	<!-- responsive meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,13 +15,13 @@
 	<link rel="stylesheet" href="frontend/css/responsive.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="frontend/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="frontend/images/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="frontend/images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="frontend/images/Favicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="frontend/images/Favicon.png" sizes="16x16">
 
     <!-- Fixing Internet Explorer-->
-    <!--[if lt IE 9]>
+ 
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="js/html5shiv.js"></script>
-    <![endif]-->
     
+
 </head>

@@ -7,7 +7,7 @@
                 <div class="single-footer-widget mar-btm">
                     <div class="footer-logo">
                         <a href="index.html">
-                            <img src="images/footer/footer-logo.png" alt="Awesome Footer Logo">
+                            <img  src="frontend/images/logorb.png" alt="Awesome Footer Logo">
                         </a>
                     </div>
                     <div class="our-info">

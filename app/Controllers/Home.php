@@ -72,7 +72,7 @@ class Home extends BaseController
     {
        $data = [
             'title' => 'ShopDetail',
-            'isi' => 'layout_user/menu/ShopDetail.php',
+            'isi' => 'layout_user/menu/DetailShop.php',
        ];
         echo view('layout_user/wrapper.php',$data);
     }
@@ -85,6 +85,7 @@ class Home extends BaseController
         echo view('layout_user/wrapper.php',$data);
     }
      
+    
     // untuk tampilan Home
       
     
