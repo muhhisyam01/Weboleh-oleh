@@ -627,6 +627,150 @@ INFO - 2023-02-01 12:30:40 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-02-01 12:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-02-01 12:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-02-01 12:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+<<<<<<< Updated upstream
 INFO - 2023-02-01 12:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-02-01 12:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-02-01 12:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+ERROR - 2023-02-01 13:33:48 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'db_weboleh_oleh', 3306, '', 0)
+#1 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\app\Models\ProfilModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\app\Controllers\Home.php(24): App\Models\ProfilModel->get_profil()
+#6 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\muham\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\app\Models\ProfilModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\app\Controllers\Home.php(24): App\Models\ProfilModel->get_profil()
+#5 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\muham\\...')
+#10 {main}
+CRITICAL - 2023-02-01 13:33:48 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_profil`', [], false)
+ 3 APPPATH\Models\ProfilModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(24): App\Models\ProfilModel->get_profil()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-01 13:34:31 --> mysqli_sql_exception: Table 'db_weboleh_oleh.tb_profil' doesn't exist in C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\app\Models\ProfilModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\app\Controllers\Home.php(24): App\Models\ProfilModel->get_profil()
+#6 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\muham\\...')
+#11 {main}
+CRITICAL - 2023-02-01 13:34:31 --> Table 'db_weboleh_oleh.tb_profil' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_profil`', [], false)
+ 2 APPPATH\Models\ProfilModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(24): App\Models\ProfilModel->get_profil()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-01 13:34:40 --> mysqli_sql_exception: Table 'db_weboleh_oleh.tb_profil' doesn't exist in C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\app\Models\ProfilModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\app\Controllers\Home.php(24): App\Models\ProfilModel->get_profil()
+#6 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\muham\\...')
+#11 {main}
+CRITICAL - 2023-02-01 13:34:40 --> Table 'db_weboleh_oleh.tb_profil' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_profil`', [], false)
+ 2 APPPATH\Models\ProfilModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(24): App\Models\ProfilModel->get_profil()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-01 13:37:05 --> mysqli_sql_exception: Table 'db_weboleh_oleh.tb_profil' doesn't exist in C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\app\Models\ProfilModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\app\Controllers\Home.php(24): App\Models\ProfilModel->get_profil()
+#6 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\muham\\...')
+#11 {main}
+CRITICAL - 2023-02-01 13:37:05 --> Table 'db_weboleh_oleh.tb_profil' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_profil`', [], false)
+ 2 APPPATH\Models\ProfilModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(24): App\Models\ProfilModel->get_profil()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-01 15:27:13 --> mysqli_sql_exception: Table 'db_weboleh_oleh.tb_profil' doesn't exist in C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\app\Models\ProfilModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\app\Controllers\Home.php(24): App\Models\ProfilModel->get_profil()
+#6 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\muham\OneDrive\Documents\Web-Oleh-Oleh\Weboleh-oleh\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\muham\\...')
+#11 {main}
+CRITICAL - 2023-02-01 15:27:14 --> Table 'db_weboleh_oleh.tb_profil' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_profil`', [], false)
+ 2 APPPATH\Models\ProfilModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(24): App\Models\ProfilModel->get_profil()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+>>>>>>> Stashed changes
