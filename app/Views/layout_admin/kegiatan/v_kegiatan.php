@@ -40,10 +40,10 @@
                         <table id="example" class="display" style="width:100%">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
+                                <th>No</th>
+                                        <th>Nama Kegiatan</th>
+                                        <th>Deskripsi </th>
+                                        <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
