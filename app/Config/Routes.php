@@ -31,14 +31,19 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 // $routes->get('/Auth/(:any)', 'Auth::tes');
 // $routes->get('/tes', 'Auth::tes');
+
+
 $routes->get('/', 'Home::index');
 $routes->get('/login', 'Home::login');
 $routes->get('/About', 'Home::About');
 $routes->get('/Services', 'Home::Services');
-$routes->get('/Kegiatan', 'Home::Kegiatan');
+$routes->get('/Kegiatan_Home', 'Home::Kegiatan_Home');
 $routes->get('/Shop', 'Home::Shop');
-$routes->get('/DetailShop', 'Home::ShopDetail');
+$routes->get('/ShopDetail(:segment)', 'Home::ShopDetail/$1');
 $routes->get('/Contact', 'Home::Contact');
+
+
+// admin
 $routes->get('/awal', 'Admin::awal');
 $routes->get('/produk', 'Admin::produk');
 $routes->get('/tambah_produk', 'Admin::tambah_produk');

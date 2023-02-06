@@ -93,7 +93,7 @@
                                         <li class="current"><a href="Services">Services</a>
                                            
                                         </li>
-                                        <li ><a href="Kegiatan">Kegiatan</a>
+                                        <li ><a href="Kegiatan_Home">Kegiatan</a>
                                             <!-- <ul>
                                                 <li><a href="frontend/blog.html">Blog Default</a></li>
                                                 <li><a href="frontend/blog-large.html">Blog Large</a></li>
@@ -186,7 +186,7 @@
                                     <li class="current"><a href="Services">Services</a>
                                       
                                     </li>
-                                    <li ><a href="Kegiatan">Kegiatan</a>
+                                    <li ><a href="Kegiatan_Home">Kegiatan_Home</a>
                                         <!-- <ul>
                                             <li><a href="blog.html">Blog Default</a></li>
                                             <li><a href="blog-large.html">Blog Large</a></li>
@@ -196,8 +196,6 @@
                                     <li class="dropdown"><a href="Shop">Shop</a>
                                         <ul>
                                             <li><a href="Shop">Shop Products</a></li>
-                                            <li><a href="DetailShop">Products Single</a></li>
-                                            
                                         </ul>
                                     </li>
                                     <li><a href="Contact">Contact</a></li>
@@ -401,3 +399,4 @@
         </div>
     </div>
 </section>
+

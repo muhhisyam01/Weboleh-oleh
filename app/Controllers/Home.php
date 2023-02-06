@@ -3,25 +3,29 @@
 namespace App\Controllers;
 use App\Models\KegiatanModel;
 use App\Models\ProfilModel;
+use App\Models\ProdukModel;
 
 
 class Home extends BaseController
 {
     protected $KegiatanModel;
     protected $ProfilModel;
+    protected $ProdukModel;
 
     public function __construct()
      {
           $this->KegiatanModel = new KegiatanModel();
           $this->ProfilModel = new ProfilModel();
+          $this->ProdukModel = new ProdukModel();
      }
 
     public function index()
     {
        $data = [
+          'profil' => $this->ProfilModel->get_profil(),
             'title' => 'home',
             'isi' => 'home',
-            'profil' => $this->ProfilModel->get_profil()
+            
        ];
         echo view('layout_user/wrapper.php',$data);
     }
@@ -32,10 +36,7 @@ class Home extends BaseController
         return view('login.php');
     }
 
-    // public function admin()
-    // {
-    //    echo 'halaman admin';
-    // }
+   
     public function About()
     {
        $data = [
@@ -44,6 +45,7 @@ class Home extends BaseController
        ];
         echo view('layout_user/wrapper.php',$data);
     }
+
     public function Services()
     {
        $data = [
@@ -52,29 +54,38 @@ class Home extends BaseController
        ];
         echo view('layout_user/wrapper.php',$data);
     }
-    public function Kegiatan()
+    public function Kegiatan_Home()
     {
        $data = [
             'title' => 'Kegiatan',
+            'kegiatan' => $this->KegiatanModel->get_kegiatan(),
             'isi' => 'layout_user/menu/Kegiatan.php',
        ];
         echo view('layout_user/wrapper.php',$data);
     }
+
+
     public function Shop()
     {
        $data = [
             'title' => 'Shop',
+            'produk' => $this->ProdukModel->get_produk(),
             'isi' => 'layout_user/menu/Shop.php',
        ];
         echo view('layout_user/wrapper.php',$data);
     }
-    public function ShopDetail()
+
+
+    public function ShopDetail($id_produk)
     {
        $data = [
-            'title' => 'ShopDetail',
-            'isi' => 'layout_user/menu/DetailShop.php',
+            'title' => 'Shop Detail',
+            'produk_detial' => $this->ProdukModel->edit_produk($id_produk),
+            'isi' => 'layout_user/menu/ShopDetail.php',
        ];
         echo view('layout_user/wrapper.php',$data);
+
+     // echo 'Halaman Detail';
     }
     public function Contact()
     {
@@ -85,7 +96,6 @@ class Home extends BaseController
         echo view('layout_user/wrapper.php',$data);
     }
      
-    
     // untuk tampilan Home
       
     

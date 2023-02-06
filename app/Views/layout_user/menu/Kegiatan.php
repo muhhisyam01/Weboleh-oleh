@@ -18,7 +18,7 @@
                                                         <span class="flaticon-technology"></span>    
                                                     </div>
                                                     <div class="text-box">
-                                                        <p>+123-456-7890 & 23</p>
+                                                        <p>Nomor UMKM </p>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -26,7 +26,7 @@
                                                         <span class="flaticon-note"></span>    
                                                     </div>
                                                     <div class="text-box">
-                                                        <p>Mailus@inFocus.com</p>
+                                                        <p>Email UMKM</p>
                                                     </div>
                                                 </li>
                                             </ul>    
@@ -36,7 +36,7 @@
                                 </div>    
                             </div>
                             <div class="header-upper-right clearfix">
-                                <p>Stay Connected:</p>
+                                <p>Sosial Media UMKM</p>
                                 <ul class="sociallinks-style-one">
                                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -77,36 +77,14 @@
                                 <div class="navbar-collapse collapse clearfix">
                                     <ul class="navigation clearfix">
                                         <li class=""><a href="/">Home</a></li>
-                                        <li class="dropdown"><a href="About">About Us</a>
-                                            <!-- <ul>
-                                                <li><a href="frontend/about.html">About Company</a></li>
-                                                <li><a href="frontend/team.html">Meet Our Team</a></li>
-                                                <li><a href="frontend/project.html">Proejcts Default</a></li>
-                                                <li><a href="frontend/project-v2.html">Projects Modern</a></li>
-                                                <li><a href="frontend/project-single.html">Project Single</a></li>
-                                                <li><a href="frontend/consultation.html">Consultation</a></li>
-                                                <li><a href="frontend/faq.html">FAQ’s</a></li>
-                                                <li><a href="frontend/testimonials.html">Testimonials</a></li>
-                                                <li><a href="frontend/404.html">404 Page</a></li>
-                                            </ul> -->
-                                        </li>
+                                        <li class="dropdown"><a href="About">About Us</a></li>
                                         <li ><a href="Services">Services</a>
                                            
                                         </li>
-                                        <li class="current"><a href="Kegiatan">Kegiatan</a>
-                                            <!-- <ul>
-                                                <li><a href="frontend/blog.html">Blog Default</a></li>
-                                                <li><a href="frontend/blog-large.html">Blog Large</a></li>
-                                                <li><a href="frontend/blog-single.html">Blog Single Post</a></li>
-                                            </ul> -->
-                                        </li>
+                                        <li class="current"><a href="Kegiatan_Home">Kegiatan</a></li>
                                         <li class="dropdown"><a href="Shop">Shop</a>
                                             <ul>
                                                 <li><a href="Shop">Shop Products</a></li>
-                                                <li><a href="DetailShop">Products Single</a></li>
-                                                <!-- <li><a href="frontend/shopping-cart.html">Shopping Cart</a></li>
-                                                <li><a href="frontend/checkout.html">Checkout</a></li>
-                                                <li><a href="frontend/account.html">My Account</a></li> -->
                                             </ul>
                                         </li>
                                         <li><a href="Contact">Contact</a></li>
@@ -171,34 +149,13 @@
                                 <ul class="navigation clearfix">
                                     <li class=""><a href="/">Home</a></li>
                                     <li ><a href="About">About Us</a>
-                                        <!-- <ul>
-                                            <li><a href="about.html">About Company</a></li>
-                                            <li><a href="team.html">Meet Our Team</a></li>
-                                            <li><a href="project.html">Proejcts Default</a></li>
-                                            <li><a href="project-v2.html">Projects Modern</a></li>
-                                            <li><a href="project-single.html">Project Single</a></li>
-                                            <li><a href="consultation.html">Consultation</a></li>
-                                            <li><a href="faq.html">FAQ’s</a></li>
-                                            <li><a href="testimonials.html">Testimonials</a></li>
-                                            <li><a href="404.html">404 Page</a></li>
-                                        </ul> -->
                                     </li>
-                                    <li ><a href="Services">Services</a>
-                                      
-                                    </li>
-                                    <li class="current"><a href="Kegiatan">Kegiatan</a>
-                                        <!-- <ul>
-                                            <li><a href="blog.html">Blog Default</a></li>
-                                            <li><a href="blog-large.html">Blog Large</a></li>
-                                            <li><a href="blog-single.html">Blog Single Post</a></li>
-                                        </ul> -->
+                                    <li ><a href="Services">Services</a></li>
+                                    <li class="current"><a href="Kegiatan_Home">Kegiatan</a>
                                     </li>
                                     <li class="dropdown"><a href="Shop">Shop</a>
                                         <ul>
                                             <li><a href="Shop">Shop Products</a></li>
-                                            <li><a href="DetailShop">Products Single</a></li>
-                                            <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                                          
                                         </ul>
                                     </li>
                                     <li><a href="Contact">Contact</a></li>
@@ -218,7 +175,7 @@
 	    <div class="row">
 	        <div class="col-md-12">
 	            <div class="breadcrumbs">
-	                <h1>Blog Default</h1>
+	                <h1>Kegiatan</h1>
 	            </div>
 	        </div>
 	    </div>
@@ -232,7 +189,7 @@
                             <ul>
                                 <li><a href="index.html">Home</a></li>
                                 <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-                                <li class="active">Blog Default</li>
+                                <li class="active">Kegiatan</li>
                             </ul>
                         </div>
                         <div class="right pull-right">
@@ -257,10 +214,12 @@
                 <div class="blog-post">
                     <div class="row">
                         <!--Start single latest blog-->
+                    <?php 
+                        foreach ($kegiatan as $get_kegiatan) { ?>
                         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                             <div class="single-blog-post">
                                 <div class="img-holder">
-                                    <img src="images/blog/blog-1.jpg" alt="Awesome Image">
+                                    <img src="<?= base_url()."/img/kegiatan/".$get_kegiatan['foto_1'] ?>" alt="Awesome Image" style=" width: 570px; height: 200px; " >
                                     <div class="overlay-style-one">
                                         <div class="box">
                                             <div class="content">
@@ -270,254 +229,21 @@
                                     </div>
                                 </div>
                                 <div class="text-holder">
-                                    <span>Written By</span>
+                                    <!-- <span>Written By</span>
                                     <ul class="meta-info">
                                         <li><a href="#">Mark Fletcher, 17th Aug 2017</a></li>
-                                    </ul>
-                                    <h3><a class="blog-title" href="blog-single.html">Tips for successfull business</a></h3> 
+                                    </ul> -->
+                                    <h3><a class="blog-title" href="blog-single.html"><?= $get_kegiatan['nama_kegiatan'];  ?></a></h3> 
                                     <div class="text">
-                                        <p>Rationally encounter consequences seds utthat are extremely painful nore us again were anyone who loves desires.</p>
+                                        <p><?= $get_kegiatan['deskripsi'];  ?></p>
                                     </div>
                                     <div class="readmore">
-                                        <a href="blog-single.html">Read More</a>    
+                                        <a href="#">Read More</a>    
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--End single latest blog-->
-                        <!--Start single latest blog-->
-                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                            <div class="single-blog-post">
-                                <div class="img-holder">
-                                    <img src="images/blog/blog-2.jpg" alt="Awesome Image">
-                                    <div class="overlay-style-one">
-                                        <div class="box">
-                                            <div class="content">
-                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-holder">
-                                    <span>Written By</span>
-                                    <ul class="meta-info">
-                                        <li><a href="#">Daniel Martin, 21st May 2017</a></li>
-                                    </ul>
-                                    <h3><a class="blog-title" href="blog-single.html">Improve your employee skills</a></h3> 
-                                    <div class="text">
-                                        <p>Pursues or desires to obtain pain of itself because it is pain, but because occasionally can procure great pleasure.</p>
-                                    </div>
-                                    <div class="readmore">
-                                        <a href="blog-single.html">Read More</a>    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End single latest blog-->
-                        <!--Start single latest blog-->
-                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                            <div class="single-blog-post">
-                                <div class="img-holder">
-                                    <img src="images/blog/blog-3.jpg" alt="Awesome Image">
-                                    <div class="overlay-style-one">
-                                        <div class="box">
-                                            <div class="content">
-                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-holder">
-                                    <span>Written By</span>
-                                    <ul class="meta-info">
-                                        <li><a href="#">Venanda Spin, 08th Apr 2017</a></li>
-                                    </ul>
-                                    <h3><a class="blog-title" href="blog-single.html">Budget hacks for accounting</a></h3> 
-                                    <div class="text">
-                                        <p>To take a trivial example, which of us ever undertake laborious physical exercise sed except to obtain some advantage.</p>
-                                    </div>
-                                    <div class="readmore">
-                                        <a href="blog-single.html">Read More</a>    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End single latest blog-->
-                        
-                        <!--Start single latest blog-->
-                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                            <div class="single-blog-post">
-                                <div class="img-holder">
-                                    <img src="images/blog/blog-4.jpg" alt="Awesome Image">
-                                    <div class="overlay-style-one">
-                                        <div class="box">
-                                            <div class="content">
-                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-holder">
-                                    <span>Written By</span>
-                                    <ul class="meta-info">
-                                        <li><a href="#">Daniel Martin, 21st May 2017</a></li>
-                                    </ul>
-                                    <h3><a class="blog-title" href="blog-single.html">Improve your employee skills</a></h3> 
-                                    <div class="text">
-                                        <p>Pursues or desires to obtain pain of itself because it is pain, but because occasionally can procure great pleasure.</p>
-                                    </div>
-                                    <div class="readmore">
-                                        <a href="blog-single.html">Read More</a>    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End single latest blog-->
-                        <!--Start single latest blog-->
-                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                            <div class="single-blog-post">
-                                <div class="img-holder">
-                                    <img src="images/blog/blog-5.jpg" alt="Awesome Image">
-                                    <div class="overlay-style-one">
-                                        <div class="box">
-                                            <div class="content">
-                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-holder">
-                                    <span>Written By</span>
-                                    <ul class="meta-info">
-                                        <li><a href="#">Venanda Spin, 08th Apr 2017</a></li>
-                                    </ul>
-                                    <h3><a class="blog-title" href="blog-single.html">Budget hacks for accounting</a></h3> 
-                                    <div class="text">
-                                        <p>To take a trivial example, which of us ever undertake laborious physical exercise sed except to obtain some advantage.</p>
-                                    </div>
-                                    <div class="readmore">
-                                        <a href="blog-single.html">Read More</a>    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End single latest blog-->
-                        <!--Start single latest blog-->
-                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                            <div class="single-blog-post">
-                                <div class="img-holder">
-                                    <img src="images/blog/blog-6.jpg" alt="Awesome Image">
-                                    <div class="overlay-style-one">
-                                        <div class="box">
-                                            <div class="content">
-                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-holder">
-                                    <span>Written By</span>
-                                    <ul class="meta-info">
-                                        <li><a href="#">Mark Fletcher, 17th Aug 2017</a></li>
-                                    </ul>
-                                    <h3><a class="blog-title" href="blog-single.html">Tips for successfull business</a></h3> 
-                                    <div class="text">
-                                        <p>Rationally encounter consequences seds utthat are extremely painful nore us again were anyone who loves desires.</p>
-                                    </div>
-                                    <div class="readmore">
-                                        <a href="blog-single.html">Read More</a>    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End single latest blog-->
-                        
-                        <!--Start single latest blog-->
-                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                            <div class="single-blog-post">
-                                <div class="img-holder">
-                                    <img src="images/blog/blog-7.jpg" alt="Awesome Image">
-                                    <div class="overlay-style-one">
-                                        <div class="box">
-                                            <div class="content">
-                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-holder">
-                                    <span>Written By</span>
-                                    <ul class="meta-info">
-                                        <li><a href="#">Venanda Spin, 08th Apr 2017</a></li>
-                                    </ul>
-                                    <h3><a class="blog-title" href="blog-single.html">Budget hacks for accounting</a></h3> 
-                                    <div class="text">
-                                        <p>To take a trivial example, which of us ever undertake laborious physical exercise sed except to obtain some advantage.</p>
-                                    </div>
-                                    <div class="readmore">
-                                        <a href="blog-single.html">Read More</a>    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End single latest blog-->
-                        <!--Start single latest blog-->
-                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                            <div class="single-blog-post">
-                                <div class="img-holder">
-                                    <img src="images/blog/blog-8.jpg" alt="Awesome Image">
-                                    <div class="overlay-style-one">
-                                        <div class="box">
-                                            <div class="content">
-                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-holder">
-                                    <span>Written By</span>
-                                    <ul class="meta-info">
-                                        <li><a href="#">Mark Fletcher, 17th Aug 2017</a></li>
-                                    </ul>
-                                    <h3><a class="blog-title" href="blog-single.html">Tips for successfull business</a></h3> 
-                                    <div class="text">
-                                        <p>Rationally encounter consequences seds utthat are extremely painful nore us again were anyone who loves desires.</p>
-                                    </div>
-                                    <div class="readmore">
-                                        <a href="blog-single.html">Read More</a>    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End single latest blog-->
-                        <!--Start single latest blog-->
-                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                            <div class="single-blog-post">
-                                <div class="img-holder">
-                                    <img src="images/blog/blog-9.jpg" alt="Awesome Image">
-                                    <div class="overlay-style-one">
-                                        <div class="box">
-                                            <div class="content">
-                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-holder">
-                                    <span>Written By</span>
-                                    <ul class="meta-info">
-                                        <li><a href="#">Daniel Martin, 21st May 2017</a></li>
-                                    </ul>
-                                    <h3><a class="blog-title" href="blog-single.html">Improve your employee skills</a></h3> 
-                                    <div class="text">
-                                        <p>Pursues or desires to obtain pain of itself because it is pain, but because occasionally can procure great pleasure.</p>
-                                    </div>
-                                    <div class="readmore">
-                                        <a href="blog-single.html">Read More</a>    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <?php } ?>
                         <!--End single latest blog-->
                     </div>
                 </div>

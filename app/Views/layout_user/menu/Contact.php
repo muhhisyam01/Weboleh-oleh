@@ -93,7 +93,7 @@
                                         <li ><a href="Services ">Services</a>
                                            
                                         </li>
-                                        <li ><a href="Kegiatan">Kegiatan</a>
+                                        <li ><a href="Kegiatan_Home">Kegiatan</a>
                                             <!-- <ul>
                                                 <li><a href="frontend/blog.html">Blog Default</a></li>
                                                 <li><a href="frontend/blog-large.html">Blog Large</a></li>
@@ -103,7 +103,7 @@
                                         <li class="dropdown"><a href="Shop">Shop</a>
                                             <ul>
                                                 <li><a href="Shop">Shop Products</a></li>
-                                                <li><a href="DetailShop">Products Single</a></li>
+                                                <!-- <li><a href="DetailShop">Products Single</a></li> -->
                                                 <!-- <li><a href="frontend/shopping-cart.html">Shopping Cart</a></li>
                                                 <li><a href="frontend/checkout.html">Checkout</a></li>
                                                 <li><a href="frontend/account.html">My Account</a></li> -->
@@ -170,23 +170,11 @@
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
                                     <li class=""><a href="/">Home</a></li>
-                                    <li ><a href="About">About Us</a>
-                                        <!-- <ul>
-                                            <li><a href="about.html">About Company</a></li>
-                                            <li><a href="team.html">Meet Our Team</a></li>
-                                            <li><a href="project.html">Proejcts Default</a></li>
-                                            <li><a href="project-v2.html">Projects Modern</a></li>
-                                            <li><a href="project-single.html">Project Single</a></li>
-                                            <li><a href="consultation.html">Consultation</a></li>
-                                            <li><a href="faq.html">FAQ’s</a></li>
-                                            <li><a href="testimonials.html">Testimonials</a></li>
-                                            <li><a href="404.html">404 Page</a></li>
-                                        </ul> -->
-                                    </li>
+                                    <li ><a href="About">About Us</a></li>
                                     <li ><a href="Services">Services</a>
                                       
                                     </li>
-                                    <li ><a href="Kegiatan">Kegiatan</a>
+                                    <li ><a href="Kegiatan_Home">Kegiatan</a>
                                         <!-- <ul>
                                             <li><a href="blog.html">Blog Default</a></li>
                                             <li><a href="blog-large.html">Blog Large</a></li>
@@ -196,8 +184,6 @@
                                     <li class="dropdown"><a href="Shop">Shop</a>
                                         <ul>
                                             <li><a href="Shop">Shop Products</a></li>
-                                            <li><a href="DetailShop">Products Single</a></li>
-                                           
                                         </ul>
                                     </li>
                                     <li class="current"><a href="Contact">Contact</a></li>
