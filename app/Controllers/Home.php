@@ -67,6 +67,16 @@ class Home extends BaseController
         echo view('layout_user/wrapper.php',$data);
     }
 
+    public function KegiatanDetail()
+    {
+       $data = [
+            'title' => 'Kegiatan Detail',
+            'isi' => 'layout_user/menu/KegiatanDetail.php',
+       ];
+        echo view('layout_user/wrapper.php',$data);
+
+     // echo 'Halaman Detail';
+    }
 
     public function Shop()
     {

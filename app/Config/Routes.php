@@ -38,6 +38,7 @@ $routes->get('/login', 'Home::login');
 $routes->get('/About', 'Home::About');
 $routes->get('/Services', 'Home::Services');
 $routes->get('/Kegiatan_Home', 'Home::Kegiatan_Home');
+$routes->get('/KegiatanDetail', 'Home::KegiatanDetail');
 $routes->get('/Shop', 'Home::Shop');
 $routes->get('/ShopDetail(:segment)', 'Home::ShopDetail/$1');
 $routes->get('/Contact', 'Home::Contact');

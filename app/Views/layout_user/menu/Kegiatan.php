@@ -187,7 +187,7 @@
                     <div class="inner-content">
                         <div class="left pull-left">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="/">Home</a></li>
                                 <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
                                 <li class="active">Kegiatan</li>
                             </ul>
@@ -219,11 +219,11 @@
                         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                             <div class="single-blog-post">
                                 <div class="img-holder">
-                                    <img src="<?= base_url()."/img/kegiatan/".$get_kegiatan['foto_1'] ?>" alt="Awesome Image" style=" width: 570px; height: 200px; " >
+                                    <img src="<?= base_url()."frontend/img/kegiatan/".$get_kegiatan['foto_1'] ?>" alt="Awesome Image" style=" width: 570px; height: 200px; " >
                                     <div class="overlay-style-one">
                                         <div class="box">
                                             <div class="content">
-                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                                <a href="KegiatanDetail"><i class="fa fa-link" aria-hidden="true"></i></a>
                                             </div>
                                         </div>
                                     </div>

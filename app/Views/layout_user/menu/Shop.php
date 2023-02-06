@@ -248,7 +248,7 @@
                                     <div class="overlay-style-one">
                                         <div class="box">
                                             <div class="content">
-                                                <a href="DetailShop"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                                <a href="<?= base_url('ShopDetail'.$get_produk['id_produk']) ?>"><i class="fa fa-link" aria-hidden="true"></i></a>
                                             </div>
                                         </div>
                                     </div>

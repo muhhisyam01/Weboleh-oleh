@@ -226,7 +226,7 @@
                     <div class="inner-content">
                         <div class="left pull-left">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="/">Home</a></li>
                                 <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
                                 <li class="active">Services</li>
                             </ul>
