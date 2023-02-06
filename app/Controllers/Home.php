@@ -50,6 +50,7 @@ class Home extends BaseController
     {
        $data = [
             'title' => 'Services',
+            
             'isi' => 'layout_user/menu/Services.php',
        ];
         echo view('layout_user/wrapper.php',$data);
@@ -58,7 +59,9 @@ class Home extends BaseController
     {
        $data = [
             'title' => 'Kegiatan',
-            'kegiatan' => $this->KegiatanModel->get_kegiatan(),
+            'kegiatan' =>$this->KegiatanModel->paginate(6, 'tb_kegiatan'),
+            'pager' =>$this->KegiatanModel->pager,
+          //   'kegiatan' => $this->KegiatanModel->get_kegiatan(),
             'isi' => 'layout_user/menu/Kegiatan.php',
        ];
         echo view('layout_user/wrapper.php',$data);
@@ -69,7 +72,8 @@ class Home extends BaseController
     {
        $data = [
             'title' => 'Shop',
-            'produk' => $this->ProdukModel->get_produk(),
+            'produk' =>$this->ProdukModel->paginate(9, 'produk'),
+            'pager' =>$this->ProdukModel->pager,
             'isi' => 'layout_user/menu/Shop.php',
        ];
         echo view('layout_user/wrapper.php',$data);

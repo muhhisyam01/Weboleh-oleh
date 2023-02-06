@@ -91,7 +91,7 @@
                                     </ul>
                                 </div>
                             </nav>
-                            <div class="mainmenu-middle clearfix">
+                            <!-- <div class="mainmenu-middle clearfix">
                                 <ul class="clearfix">
                                     <li> 
                                         <div class="outer-search-box">
@@ -111,7 +111,7 @@
                                    
                                     
                                 </ul>
-                            </div>
+                            </div> -->
                             <!--Start mainmenu right box-->
                             <!-- <div class="mainmenu-right-box clearfix">
                                 <a class="thm-btn" href="#">Free Enquiry</a>    
@@ -250,7 +250,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12"> 
+        <?= $pager->links('tb_kegiatan', 'KegiatanPage') ?>
+            <!-- <div class="col-md-12"> 
                 <ul class="post-pagination text-center">
                     <li><a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a></li>
                     <li class="active"><a href="#">1</a></li>
@@ -258,7 +259,7 @@
                     <li><a href="#">3</a></li>
                     <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
                 </ul>
-            </div> 
+            </div>  -->
         </div>
     </div>
 </section> 

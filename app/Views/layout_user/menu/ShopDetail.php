@@ -109,7 +109,7 @@
                                     </ul>
                                 </div>
                             </nav>
-                            <div class="mainmenu-middle clearfix">
+                            <!-- <div class="mainmenu-middle clearfix">
                                 <ul class="clearfix">
                                     <li> 
                                         <div class="outer-search-box">
@@ -129,7 +129,7 @@
                                    
                                     
                                 </ul>
-                            </div>
+                            </div> -->
                             <!--Start mainmenu right box-->
                             <!-- <div class="mainmenu-right-box clearfix">
                                 <a class="thm-btn" href="#">Free Enquiry</a>    

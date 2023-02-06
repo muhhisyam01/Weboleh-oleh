@@ -113,7 +113,7 @@
                                     </ul>
                                 </div>
                             </nav>
-                            <div class="mainmenu-middle clearfix">
+                            <!-- <div class="mainmenu-middle clearfix">
                                 <ul class="clearfix">
                                     <li> 
                                         <div class="outer-search-box">
@@ -133,7 +133,7 @@
                                    
                                     
                                 </ul>
-                            </div>
+                            </div> -->
                             <!--Start mainmenu right box-->
                             <!-- <div class="mainmenu-right-box clearfix">
                                 <a class="thm-btn" href="#">Free Enquiry</a>    
@@ -280,15 +280,17 @@
                     </div>
                     <!--Start post pagination-->
                     <div class="row">
-                        <div class="col-md-12"> 
-                            <ul class="post-pagination text-center">
-                                <li><a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a></li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div> 
-                    </div>
+        <?= $pager->links('produk', 'ShopPage') ?>
+            <!-- <div class="col-md-12"> 
+                <ul class="post-pagination text-center">
+                    <li><a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>  -->
+        </div>
                     <!--End post pagination-->
                 </div>
             </div>
@@ -296,12 +298,12 @@
             <div class="col-xl-3 col-lg-6 col-md-7 col-sm-12 float-left">
                 <div class="sidebar-wrapper">
                     <!--Start single sidebar-->
-                    <div class="single-sidebar">
+                    <!-- <div class="single-sidebar">
                         <form class="search-form" action="#">
 							<input placeholder="Search..." type="text">
 							<button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
 						</form>
-                    </div>
+                    </div> -->
                     <!--End single sidebar-->
                     <!--Start single sidebar--> 
                     <div class="single-sidebar">

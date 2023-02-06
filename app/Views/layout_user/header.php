@@ -11,6 +11,7 @@
     
 	<!-- master stylesheet -->
 	<link rel="stylesheet" href="frontend/css/style.css">
+	<link rel="stylesheet" href="frontend/css/pagination.css">
 	<!-- Responsive stylesheet -->
 	<link rel="stylesheet" href="frontend/css/responsive.css">
     <!-- Favicon -->
