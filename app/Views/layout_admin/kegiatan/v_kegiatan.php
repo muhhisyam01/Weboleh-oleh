@@ -1,3 +1,7 @@
+
+ <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"> -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css"> 
+
 <section class="pcoded-main-container">
     <div class="pcoded-content">
         <!-- [ breadcrumb ] start -->
@@ -32,16 +36,17 @@
                     </div>
                     <div class="card-body table-border-style">
                         <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>No</th>
-                                        <th>Nama Kegiatan</th>
-                                        <th>Deskripsi </th>
-                                        <th>Aksi</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
+                            
+                        <table id="example" class="display" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Age</th>
+                            </tr>
+                        </thead>
+                        <tbody>
                                 <?php 
                                     $no = 1;
                                         foreach ($kegiatan as $get_kegiatan) { ?>
@@ -56,7 +61,8 @@
                                     </tr>
                                     <?php } ?>
                                 </tbody>
-                            </table>
+                        </table>
+
                         </div>
                     </div>
                 </div>
@@ -66,4 +72,14 @@
         
         <!-- [ Main Content ] end -->
     </div>
-</section>
+</section> 
+
+
+<script>
+   $(document).ready(function () {
+    $('#example').DataTable();
+});
+</script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>

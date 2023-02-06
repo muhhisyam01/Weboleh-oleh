@@ -28,21 +28,21 @@
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="nama_kegiatan">Nama Kegiatan</label>
-                                    <input type="text" class="form-control"   placeholder="Nama Kegiatan" name="nama_kegiatan" autofocus >
+                                    <input type="text" class="form-control"   placeholder="Nama Kegiatan" name="nama_kegiatan" autofocus required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputAddress">Deskripsi Kegiatan</label>
-                                <textarea type="text" class="form-control" name="deskripsi" placeholder="Deskripsi Kegiatan" id="deskripsi" cols="30" rows="10"></textarea>
+                                <textarea type="text" class="form-control" name="deskripsi" placeholder="Deskripsi Kegiatan" id="deskripsi" cols="30" rows="10" required></textarea>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="inputAddress2">Foto 1</label>
-                                    <input type="file" class="form-control" name="foto_1" id="foto_1" >
+                                    <input type="file" class="form-control" name="foto_1" id="foto_1" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="foto_2">Foto 2</label>
-                                    <input type="file" class="form-control" name="foto_2" id="foto_2" >
+                                    <input type="file" class="form-control" name="foto_2" id="foto_2" required>
                                 </div>
                             </div>
                             <button class="btn btn-info">  Tambah Kegiatan <img src="<?= base_url()?>/assets_admin/assets/icon/send.svg" alt=""></span></button>

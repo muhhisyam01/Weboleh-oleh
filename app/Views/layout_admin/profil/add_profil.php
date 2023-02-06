@@ -10,7 +10,7 @@
                         </div>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
-                            <li class="breadcrumb-item"><a href="#!">Home</a></li>
+                            <li class="breadcrumb-item"><a href="awal">Home</a></li>
                             <li class="breadcrumb-item"><a href="#!">Profil</a></li>
                         </ul>
                     </div>
@@ -28,13 +28,13 @@
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="nama_produk">Nama UMKM</label>
-                                    <input type="text" class="form-control"   placeholder="Nama UMKM" name="nama_umkm" autofocus >
+                                    <input type="text" class="form-control"   placeholder="Nama UMKM" name="nama_umkm" autofocus required>
                                 </div>
                                
                             </div>
                             <div class="form-group">
                                 <label for="inputAddress">Logo UMKM</label>
-                                <input type="file" class="form-control" name="logo" id="logo" >
+                                <input type="file" class="form-control" name="logo" id="logo" required>
                             </div>
                             <!-- <div class="form-group">
                                 <label for="inputAddress2">Slide Web</label>
@@ -43,15 +43,15 @@
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="inputAddress2">Slide 1</label>
-                                    <input type="file" class="form-control" name="slide_1" id="slide_1" >
+                                    <input type="file" class="form-control" name="slide_1" id="slide_1" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="slide_2">Slide 2</label>
-                                    <input type="file" class="form-control" name="slide_2" id="slide_2" >
+                                    <input type="file" class="form-control" name="slide_2" id="slide_2" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="slide_3">Slide 3</label>
-                                    <input type="file" class="form-control" name="slide_3" id="slide_3" >
+                                    <input type="file" class="form-control" name="slide_3" id="slide_3" required>
                                 </div>
                             </div>
                             <button class="btn btn-info">  Tambah Profil <img src="<?= base_url()?>/assets_admin/assets/icon/send.svg" alt=""></span></button>

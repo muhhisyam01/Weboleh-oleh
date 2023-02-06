@@ -50,52 +50,52 @@ class Admin extends BaseController
       // dd($this->request->getVar());
       // dd($this->request->getFile('gambar_bk'));
       
-      if(!$this->validate([
-        'nama_produk' => 'required',
-        'jenis_produk' => 'required',
-        'stock' => 'required',
-        'harga' => 'required',
-        'keterangan' => 'required',
-        'gambar_1' => [
-          'rules' => 'uploaded[gambar_1]|is_image[gambar_1]|mime_in[gambar_1,image/jpg,image/jpeg,image/png]',
-          'errors' => [
-            'uploaded' => 'pilih gambar terlebih dahulu',
-            'is_image' => 'yang anda pilih buka gambar',
-            'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
-            ]
-          ],
-        'gambar_2' => [
-            'rules' => 'uploaded[gambar_2]|is_image[gambar_2]|mime_in[gambar_2,image/jpg,image/jpeg,image/png]',
-            'errors' => [
-              'uploaded' => 'pilih gambar terlebih dahulu',
-              'is_image' => 'yang anda pilih buka gambar',
-              'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
-              ]
-            ],
-        'gambar_3' => [
-              'rules' => 'uploaded[gambar_3]|is_image[gambar_3]|mime_in[gambar_3,image/jpg,image/jpeg,image/png]',
-              'errors' => [
-                'uploaded' => 'pilih gambar terlebih dahulu',
-                'is_image' => 'yang anda pilih buka gambar',
-                'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
-                ]
-              ],
-        'gambar_4' => [
-                'rules' => 'uploaded[gambar_4]|is_image[gambar_4]|mime_in[gambar_4,image/jpg,image/jpeg,image/png]',
-                'errors' => [
-                  'uploaded' => 'pilih gambar terlebih dahulu',
-                  'is_image' => 'yang anda pilih buka gambar',
-                  'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
-                  ]
-                ],
+      // if(!$this->validate([
+      //   'nama_produk' => 'required',
+      //   'jenis_produk' => 'required',
+      //   'stock' => 'required',
+      //   'harga' => 'required',
+      //   'keterangan' => 'required',
+      //   'gambar_1' => [
+      //     'rules' => 'uploaded[gambar_1]|is_image[gambar_1]|mime_in[gambar_1,image/jpg,image/jpeg,image/png]',
+      //     'errors' => [
+      //       'uploaded' => 'pilih gambar terlebih dahulu',
+      //       'is_image' => 'yang anda pilih buka gambar',
+      //       'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
+      //       ]
+      //     ],
+      //   'gambar_2' => [
+      //       'rules' => 'uploaded[gambar_2]|is_image[gambar_2]|mime_in[gambar_2,image/jpg,image/jpeg,image/png]',
+      //       'errors' => [
+      //         'uploaded' => 'pilih gambar terlebih dahulu',
+      //         'is_image' => 'yang anda pilih buka gambar',
+      //         'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
+      //         ]
+      //       ],
+      //   'gambar_3' => [
+      //         'rules' => 'uploaded[gambar_3]|is_image[gambar_3]|mime_in[gambar_3,image/jpg,image/jpeg,image/png]',
+      //         'errors' => [
+      //           'uploaded' => 'pilih gambar terlebih dahulu',
+      //           'is_image' => 'yang anda pilih buka gambar',
+      //           'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
+      //           ]
+      //         ],
+      //   'gambar_4' => [
+      //           'rules' => 'uploaded[gambar_4]|is_image[gambar_4]|mime_in[gambar_4,image/jpg,image/jpeg,image/png]',
+      //           'errors' => [
+      //             'uploaded' => 'pilih gambar terlebih dahulu',
+      //             'is_image' => 'yang anda pilih buka gambar',
+      //             'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
+      //             ]
+      //           ],
           
-        // 'gambar_1' => 'uploaded[gambar_1]',
+      //   // 'gambar_1' => 'uploaded[gambar_1]',
          
-      ])) {
-        // $validation = \Config\Services::validation();
-        // dd($validation);
-        return redirect()->back()->withInput(); 
-      }
+      // ])) {
+      //   $validation = \Config\Services::validation();
+      //   dd($validation);
+      //   return redirect()->back()->withInput(); 
+      // }
       // dd('berhasil');
 
       // ambil gambar

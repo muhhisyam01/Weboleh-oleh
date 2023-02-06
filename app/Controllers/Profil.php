@@ -39,48 +39,48 @@ class Profil extends BaseController
       // dd($this->request->getFile('logo'));
       // dd($this->request->getFile('slide_1'));
 
-        if(!$this->validate([
-            'nama_umkm' => 'required',
-            'logo' => [
-              'rules' => 'uploaded[logo]|is_image[logo]|mime_in[logo,image/jpg,image/jpeg,image/png]',
-              'errors' => [
-                'uploaded' => 'pilih gambar terlebih dahulu',
-                'is_image' => 'yang anda pilih buka gambar',
-                'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
-                ]
-              ],
-              'slide_1' => [
-                'rules' => 'uploaded[slide_1]|is_image[slide_1]|mime_in[slide_1,image/jpg,image/jpeg,image/png]',
-                'errors' => [
-                  'is_image' => 'yang anda pilih buka gambar',
-                  'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
-                  'uploaded' => 'gambar harus di pilih',
-                ]
-              ],
-              'slide_2' => [
-                'rules' => 'uploaded[slide_2]|is_image[slide_2]|mime_in[slide_2,image/jpg,image/jpeg,image/png]',
-                'errors' => [
-                  'is_image' => 'yang anda pilih buka gambar',
-                  'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
-                  'uploaded' => 'gambar harus di pilih',
-                ]
-              ],
-              'slide_3' => [
-                'rules' => 'uploaded[slide_3]|is_image[slide_3]|mime_in[slide_3,image/jpg,image/jpeg,image/png]',
-                'errors' => [
-                  'is_image' => 'yang anda pilih buka gambar',
-                  'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
-                  'uploaded' => 'gambar harus di pilih',
-                ]
-              ],
+        // if(!$this->validate([
+        //     'nama_umkm' => 'required',
+        //     'logo' => [
+        //       'rules' => 'uploaded[logo]|is_image[logo]|mime_in[logo,image/jpg,image/jpeg,image/png]',
+        //       'errors' => [
+        //         'uploaded' => 'pilih gambar terlebih dahulu',
+        //         'is_image' => 'yang anda pilih buka gambar',
+        //         'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
+        //         ]
+        //       ],
+        //       'slide_1' => [
+        //         'rules' => 'uploaded[slide_1]|is_image[slide_1]|mime_in[slide_1,image/jpg,image/jpeg,image/png]',
+        //         'errors' => [
+        //           'is_image' => 'yang anda pilih buka gambar',
+        //           'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
+        //           'uploaded' => 'gambar harus di pilih',
+        //         ]
+        //       ],
+        //       'slide_2' => [
+        //         'rules' => 'uploaded[slide_2]|is_image[slide_2]|mime_in[slide_2,image/jpg,image/jpeg,image/png]',
+        //         'errors' => [
+        //           'is_image' => 'yang anda pilih buka gambar',
+        //           'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
+        //           'uploaded' => 'gambar harus di pilih',
+        //         ]
+        //       ],
+        //       'slide_3' => [
+        //         'rules' => 'uploaded[slide_3]|is_image[slide_3]|mime_in[slide_3,image/jpg,image/jpeg,image/png]',
+        //         'errors' => [
+        //           'is_image' => 'yang anda pilih buka gambar',
+        //           'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
+        //           'uploaded' => 'gambar harus di pilih',
+        //         ]
+        //       ],
               
-            // 'gambar_dp' => 'uploaded[gambar_dp]',
+        //     // 'gambar_dp' => 'uploaded[gambar_dp]',
              
-          ])) {
-            // $validation = \Config\Services::validation();
-            // dd($validation);
-            return redirect()->back()->withInput(); 
-          }
+        //   ])) {
+        //     $validation = \Config\Services::validation();
+        //     dd($validation);
+        //     return redirect()->back()->withInput(); 
+        //   }
           // dd('berhasil');
     
           // ambil gambar

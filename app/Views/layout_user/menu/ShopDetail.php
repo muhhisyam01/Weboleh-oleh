@@ -253,13 +253,13 @@
 							<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                    <img class="d-block w-70" src="frontend/images/shop/single-product.jpg" alt="First slide">
+                                    <img class="d-block w-70" src="<?= base_url()."/img/produk/".$produk_detial['gambar_1'] ?>" alt="First slide">
                                     </div>
                                     <div class="carousel-item">
-                                    <img class="d-block w-70" src="frontend/images/shop/single-product.jpg" alt="Second slide">
+                                    <img class="d-block w-70" src="<?= base_url()."/img/produk/".$produk_detial['gambar_2'] ?>" alt="Second slide">
                                     </div>
                                     <div class="carousel-item">
-                                    <img class="d-block w-70" src="frontend/images/shop/single-product.jpg" alt="Third slide">
+                                    <img class="d-block w-70" src="<?= base_url()."/img/produk/".$produk_detial['gambar_3'] ?>" alt="Third slide">
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -284,11 +284,13 @@
                                         <li><i class="fa fa-star-half"></i></li>
                                     </ul>
                                 </div>
-                                <span class="price">$29.00</span>
+                                <span class="price">Rp . <?= $produk_detial['harga']?></span>
                                 <div class="text">
-                                    <p>Working from home meant we couldsnack and coffee our breaks change our desks or view, good, drink on the job, even spend the weather started getting roughday in pajamas consequences.</p>
+                                    <ul>
+                                        <p>Stock  : <?= $produk_detial['stock']?></p>
+                                    </ul>
+                                    <p><?= $produk_detial['keterangan']?></p>
                                 </div>
-                                  
                             </div>
                         </div>
                     </div>

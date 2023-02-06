@@ -10,8 +10,8 @@
                         </div>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
-                            <li class="breadcrumb-item"><a href="#!">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#!">Produk</a></li>
+                            <li class="breadcrumb-item"><a href="awal">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Produk</a></li>
                         </ul>
                     </div>
                 </div>
@@ -53,43 +53,43 @@
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="nama_produk">Nama Produk</label>
-                                    <input type="text" class="form-control"   placeholder="Nama Produk" name="nama_produk" autofocus >
+                                    <input type="text" class="form-control"   placeholder="Nama Produk" name="nama_produk" autofocus required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="inputPassword4">Jenis Produk</label>
-                                    <input type="text" class="form-control"  placeholder="Jenis Produk" name="jenis_produk" >
+                                    <input type="text" class="form-control"  placeholder="Jenis Produk" name="jenis_produk" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputAddress">Stock Produk</label>
-                                <input type="text" class="form-control"  placeholder="Stock Produk" name="stock" >
+                                <input type="text" class="form-control"  placeholder="Stock Produk" name="stock" required>
                             </div>
                             <div class="form-group">
                                 <label for="inputAddress2">Harga Produk</label>
-                                <input type="text" class="form-control"  placeholder="Harga Produk" name="harga" >
+                                <input type="text" class="form-control"  placeholder="Harga Produk" name="harga" required>
                             </div>
                             <div class="form-group">
                                 <label for="inputAddress2">Keterangan Produk</label>
                                 <!-- <textarea type="text" class="form-control"  placeholder="Keterangan Produk" name="keterangan" required> -->
-                                <textarea type="text" class="form-control"  id="keterangan" name="keterangan" cols="30" rows="10" placeholder="Tuliskan Keterangan Produk"></textarea>
+                                <textarea type="text" class="form-control"  id="keterangan" name="keterangan" cols="30" rows="10" placeholder="Tuliskan Keterangan Produk" required></textarea>
                             </div>
                             
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="inputAddress2">Gambar 1</label>
-                                    <input type="file" class="form-control" name="gambar_1" id="gambar_1" >
+                                    <input type="file" class="form-control" name="gambar_1" id="gambar_1" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="gambar_2">Gambar 2</label>
-                                    <input type="file" class="form-control" name="gambar_2" id="gambar_2" >
+                                    <input type="file" class="form-control" name="gambar_2" id="gambar_2" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="gambar_3">Gambar 3</label>
-                                    <input type="file" class="form-control" name="gambar_3" id="gambar_3" >
+                                    <input type="file" class="form-control" name="gambar_3" id="gambar_3" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="gambar_4">Gambar 4</label>
-                                    <input type="file" class="form-control" name="gambar_4" id="gambar_4" >
+                                    <input type="file" class="form-control" name="gambar_4" id="gambar_4" required>
                                 </div>
                             </div>
                             <button class="btn btn-info">  Tambah Produk <img src="<?= base_url()?>/assets_admin/assets/icon/send.svg" alt=""></span></button>

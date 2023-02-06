@@ -40,33 +40,33 @@ class Kegiatan extends BaseController
       // dd($this->request->getFile('foto_2'));
       // dd($this->request->getFile('foto_3'));
 
-      if(!$this->validate([
-        'nama_kegiatan' => 'required',
-        'deskripsi' => 'required',
-          'foto_1' => [
-          'rules' => 'uploaded[foto_1]|is_image[foto_1]|mime_in[foto_1,image/jpg,image/jpeg,image/png]',
-          'errors' => [
-            'uploaded' => 'pilih gambar terlebih dahulu',
-            'is_image' => 'yang anda pilih buka gambar',
-            'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
-            ]
-          ],
-          'foto_2' => [
-            'rules' => 'uploaded[foto_2]|is_image[foto_2]|mime_in[foto_2,image/jpg,image/jpeg,image/png]',
-            'errors' => [
-              'is_image' => 'yang anda pilih buka gambar',
-              'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
-              'uploaded' => 'gambar harus di pilih',
-            ]
-          ],
+      // if(!$this->validate([
+      //   'nama_kegiatan' => 'required',
+      //   'deskripsi' => 'required',
+      //     'foto_1' => [
+      //     'rules' => 'uploaded[foto_1]|is_image[foto_1]|mime_in[foto_1,image/jpg,image/jpeg,image/png]',
+      //     'errors' => [
+      //       'uploaded' => 'pilih gambar terlebih dahulu',
+      //       'is_image' => 'yang anda pilih buka gambar',
+      //       'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
+      //       ]
+      //     ],
+      //     'foto_2' => [
+      //       'rules' => 'uploaded[foto_2]|is_image[foto_2]|mime_in[foto_2,image/jpg,image/jpeg,image/png]',
+      //       'errors' => [
+      //         'is_image' => 'yang anda pilih buka gambar',
+      //         'mime_in' => ' yang anda pilih bukan jpg,jpeg,png',
+      //         'uploaded' => 'gambar harus di pilih',
+      //       ]
+      //     ],
           
-        // 'gambar_dp' => 'uploaded[gambar_dp]',
+      //   // 'gambar_dp' => 'uploaded[gambar_dp]',
          
-      ])) {
-        // $validation = \Config\Services::validation();
-        // dd($validation);
-        return redirect()->back()->withInput(); 
-      }
+      // ])) {
+      //   $validation = \Config\Services::validation();
+      //   dd($validation);
+      //   return redirect()->back()->withInput(); 
+      // }
       // dd('berhasil');
       $foto_1 = $this->request->getFile('foto_1');
       $foto_2 = $this->request->getFile('foto_2');
