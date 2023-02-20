@@ -12,13 +12,13 @@
                                     <div class="state-content float-right">
                                         <!--Start single state-->
                                         <div class="state" id="value1">
-                                            <ul class="clearfix">
+                                        <ul class="clearfix">
                                                 <li>
                                                     <div class="icon-box">
                                                         <span class="flaticon-technology"></span>    
                                                     </div>
                                                     <div class="text-box">
-                                                        <p>Kontak UMKM</p>
+                                                        <p>0853-9933-3737</p>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -26,7 +26,7 @@
                                                         <span class="flaticon-note"></span>    
                                                     </div>
                                                     <div class="text-box">
-                                                        <p>Email UMKM</p>
+                                                        <p>rkbmamuju@gmail.com</p>
                                                     </div>
                                                 </li>
                                             </ul>    
@@ -244,7 +244,7 @@
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                             <div class="single-product-item">
                                 <div class="img-holder">
-                                    <img src="frontend/images/shop/1.jpg" alt="Awesome Product Image">
+                                    <img src="<?= base_url()."/img/produk/".$get_produk['gambar_1'] ?>" alt="Awesome Product Image">
                                     <div class="overlay-style-one">
                                         <div class="box">
                                             <div class="content">

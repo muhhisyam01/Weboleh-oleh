@@ -12,13 +12,13 @@
                                     <div class="state-content float-right">
                                         <!--Start single state-->
                                         <div class="state" id="value1">
-                                            <ul class="clearfix">
+                                        <ul class="clearfix">
                                                 <li>
                                                     <div class="icon-box">
                                                         <span class="flaticon-technology"></span>    
                                                     </div>
                                                     <div class="text-box">
-                                                        <p>+123-456-7890 & 23</p>
+                                                        <p>0853-9933-3737</p>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -26,7 +26,7 @@
                                                         <span class="flaticon-note"></span>    
                                                     </div>
                                                     <div class="text-box">
-                                                        <p>Mailus@inFocus.com</p>
+                                                        <p>rkbmamuju@gmail.com</p>
                                                     </div>
                                                 </li>
                                             </ul>    
@@ -253,13 +253,13 @@
 							<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                    <img class="d-block w-70" src="<?= base_url()."/img/produk/".$produk_detial['gambar_1'] ?>" alt="First slide">
+                                    <img class="d-block w-75" src="<?= base_url()."/img/produk/".$produk_detial['gambar_1'] ?>"   alt="First slide">
                                     </div>
                                     <div class="carousel-item">
-                                    <img class="d-block w-70" src="<?= base_url()."/img/produk/".$produk_detial['gambar_2'] ?>" alt="Second slide">
+                                    <img class="d-block w-75" src="<?= base_url()."/img/produk/".$produk_detial['gambar_2'] ?>" alt="Second slide">
                                     </div>
                                     <div class="carousel-item">
-                                    <img class="d-block w-70" src="<?= base_url()."/img/produk/".$produk_detial['gambar_3'] ?>" alt="Third slide">
+                                    <img class="d-block w-75" src="<?= base_url()."/img/produk/".$produk_detial['gambar_3'] ?>" alt="Third slide">
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

@@ -17,7 +17,7 @@
                                                         <span class="flaticon-technology"></span>    
                                                     </div>
                                                     <div class="text-box">
-                                                        <p>Nomor Telpon</p>
+                                                        <p>0853-9933-3737</p>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -25,7 +25,7 @@
                                                         <span class="flaticon-note"></span>    
                                                     </div>
                                                     <div class="text-box">
-                                                        <p>Email UMKM</p>
+                                                        <p>rkbmamuju@gmail.com</p>
                                                     </div>
                                                 </li>
                                             </ul>    
@@ -37,9 +37,9 @@
                             <div class="header-upper-right clearfix">
                                 <p>Sosial Media</p>
                                 <ul class="sociallinks-style-one">
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.facebook.com/rumah.b.mamuju"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.instagram.com/rumahbumn.mamuju/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopee" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
                                 </ul>

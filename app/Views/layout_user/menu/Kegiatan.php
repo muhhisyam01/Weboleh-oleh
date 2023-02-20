@@ -12,13 +12,13 @@
                                     <div class="state-content float-right">
                                         <!--Start single state-->
                                         <div class="state" id="value1">
-                                            <ul class="clearfix">
+                                        <ul class="clearfix">
                                                 <li>
                                                     <div class="icon-box">
                                                         <span class="flaticon-technology"></span>    
                                                     </div>
                                                     <div class="text-box">
-                                                        <p>Nomor UMKM </p>
+                                                        <p>0853-9933-3737</p>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -26,7 +26,7 @@
                                                         <span class="flaticon-note"></span>    
                                                     </div>
                                                     <div class="text-box">
-                                                        <p>Email UMKM</p>
+                                                        <p>rkbmamuju@gmail.com</p>
                                                     </div>
                                                 </li>
                                             </ul>    
@@ -219,7 +219,7 @@
                         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                             <div class="single-blog-post">
                                 <div class="img-holder">
-                                    <img src="<?= base_url()."frontend/img/kegiatan/".$get_kegiatan['foto_1'] ?>" alt="Awesome Image" style=" width: 570px; height: 200px; " >
+                                    <img src="<?= base_url()."/img/kegiatan/".$get_kegiatan['foto_1'] ?>" alt="Awesome Image" style=" width: 570px; height: 200px; " >
                                     <div class="overlay-style-one">
                                         <div class="box">
                                             <div class="content">
@@ -238,7 +238,7 @@
                                         <p><?= $get_kegiatan['deskripsi'];  ?></p>
                                     </div>
                                     <div class="readmore">
-                                        <a href="#">Read More</a>    
+                                        <a href="KegiatanDetail">Read More</a>    
                                     </div>
                                 </div>
                             </div>
