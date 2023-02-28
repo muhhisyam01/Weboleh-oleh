@@ -215,7 +215,7 @@
                     <div class="row">
                         <!--Start single latest blog-->
                     <?php 
-                        foreach ($kegiatan as $get_kegiatan) { ?>
+                        foreach ($tampil_kegiatan as $get_kegiatan) { ?>
                         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                             <div class="single-blog-post">
                                 <div class="img-holder">
@@ -238,7 +238,8 @@
                                         <p><?= $get_kegiatan['deskripsi'];  ?></p>
                                     </div>
                                     <div class="readmore">
-                                        <a href="KegiatanDetail">Read More</a>    
+                                        <!-- <a href="KegiatanDetail">Read More</a> -->
+                                        <a href="<?= base_url('KegiatanDetail'.$get_kegiatan['id_kegiatan']) ?>"></i>Detail</a>    
                                     </div>
                                 </div>
                             </div>

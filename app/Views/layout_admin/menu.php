@@ -46,6 +46,9 @@
 					<li class="nav-item pcoded-hasmenu">
 					    <a href="<?= base_url('kegiatan')?>" class="nav-link "><span class="pcoded-micon"><i class="feather icon-"></i></span><span class="pcoded-mtext">Kegiatan</span></a>
 					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="<?= base_url('Services_admin')?>" class="nav-link "><span class="pcoded-micon"><i class="feather icon-"></i></span><span class="pcoded-mtext">Services</span></a>
+					</li>
 				</ul>
 				
 			</div>

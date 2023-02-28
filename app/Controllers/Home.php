@@ -61,16 +61,19 @@ class Home extends BaseController
             'title' => 'Kegiatan',
             'kegiatan' =>$this->KegiatanModel->paginate(6, 'tb_kegiatan'),
             'pager' =>$this->KegiatanModel->pager,
-          //   'kegiatan' => $this->KegiatanModel->get_kegiatan(),
+
+            'tampil_kegiatan' => $this->KegiatanModel->get_kegiatan(),
+
             'isi' => 'layout_user/menu/Kegiatan.php',
        ];
         echo view('layout_user/wrapper.php',$data);
     }
 
-    public function KegiatanDetail()
+    public function KegiatanDetail($id_kegiatan)
     {
        $data = [
             'title' => 'Kegiatan Detail',
+            'kegiatan_detial' => $this->KegiatanModel->edit_kegiatan($id_kegiatan),
             'isi' => 'layout_user/menu/KegiatanDetail.php',
        ];
         echo view('layout_user/wrapper.php',$data);

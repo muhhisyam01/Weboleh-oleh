@@ -38,7 +38,7 @@ $routes->get('/login', 'Home::login');
 $routes->get('/About', 'Home::About');
 $routes->get('/Services', 'Home::Services');
 $routes->get('/Kegiatan_Home', 'Home::Kegiatan_Home');
-$routes->get('/KegiatanDetail', 'Home::KegiatanDetail');
+$routes->get('/KegiatanDetail(:segment)', 'Home::KegiatanDetail/$1');
 $routes->get('/Shop', 'Home::Shop');
 $routes->get('/ShopDetail(:segment)', 'Home::ShopDetail/$1');
 $routes->get('/Contact', 'Home::Contact');
@@ -69,7 +69,12 @@ $routes->post('/proses_kegiatan', 'Kegiatan::proses_kegiatan');
 $routes->get('/detail_kegiatan/(:segment)', 'Kegiatan::detail_kegiatan/$1');
 $routes->get('/delete_kegiatan/(:segment)', 'Kegiatan::delete_kegiatan/$1');
 
-
+// services
+$routes->get('/Services_admin', 'Services_admin::Services_admin');
+$routes->get('/add_Services', 'Services_admin::add_Services');
+$routes->post('/proses_Services', 'Services_admin::proses_Services');
+$routes->get('/detail_services/(:segment)', 'Services_admin::detail_services/$1');
+$routes->get('/delete_services/(:segment)', 'Services_admin::delete_services/$1');
 
 
 

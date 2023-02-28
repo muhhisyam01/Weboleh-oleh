@@ -11,7 +11,8 @@ class ProdukModel extends Model
 
     public function get_produk()
     {
-        return $this->db->table('produk')->get()->getResultArray();
+        // return $this->db->table('produk')->get()->getResultArray();
+        return  $this->db->table('produk')->orderBy('id_produk','desc')->get()->getResultArray();
         
     }
 

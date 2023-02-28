@@ -1,0 +1,146 @@
+INFO - 2023-02-28 00:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-28 00:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-28 00:05:47 --> Invalid file: "layout_admin/Services/add_Services.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 3 APPPATH/Views/layout_admin/content.php(4): view()
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_admin/content.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 7 APPPATH/Views/layout_admin/wrapper.php(4): view()
+ 8 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_admin/wrapper.php')
+ 9 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+11 APPPATH/Controllers/Services_admin.php(33): view()
+12 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Services_admin->add_Services()
+13 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-02-28 00:15:30 --> mysqli_sql_exception: Unknown column 'deskripsi' in 'field list' in /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Database/BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query()
+#4 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Model.php(728): CodeIgniter\BaseModel->insert()
+#7 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#8 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/app/Controllers/Services_admin.php(86): CodeIgniter\BaseModel->save()
+#9 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(934): App\Controllers\Services_admin->proses_Services()
+#10 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2023-02-28 00:15:30 --> Unknown column 'deskripsi' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(728): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Services_admin.php(86): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Services_admin->proses_Services()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-02-28 00:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-28 00:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-28 00:19:19 --> Undefined array key "id_kegiatan"
+in APPPATH/Views/layout_admin/Services/v_services.php on line 58.
+ 1 APPPATH/Views/layout_admin/Services/v_services.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_admin/Services/v_services.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/layout_admin/content.php(4): view()
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_admin/content.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 9 APPPATH/Views/layout_admin/wrapper.php(4): view()
+10 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_admin/wrapper.php')
+11 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+13 APPPATH/Controllers/Services_admin.php(24): view()
+14 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Services_admin->Services_admin()
+15 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+16 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+17 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-02-28 00:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-28 00:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-28 00:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-28 00:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-28 00:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-28 00:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-28 00:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-28 00:52:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-28 00:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-28 00:53:06 --> Invalid file: "layout_admin/Services/detail_Services.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 3 APPPATH/Views/layout_admin/content.php(4): view()
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_admin/content.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 7 APPPATH/Views/layout_admin/wrapper.php(4): view()
+ 8 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_admin/wrapper.php')
+ 9 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+11 APPPATH/Controllers/Services_admin.php(99): view()
+12 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Services_admin->detail_services()
+13 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-02-28 00:53:41 --> Undefined variable $detail_kegiatan
+in APPPATH/Views/layout_admin/Services/detail_services.php on line 16.
+ 1 APPPATH/Views/layout_admin/Services/detail_services.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_admin/Services/detail_services.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/layout_admin/content.php(4): view()
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_admin/content.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 9 APPPATH/Views/layout_admin/wrapper.php(4): view()
+10 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_admin/wrapper.php')
+11 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+13 APPPATH/Controllers/Services_admin.php(99): view()
+14 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Services_admin->detail_services()
+15 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+16 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+17 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-02-28 00:56:29 --> Undefined array key "id_kegiatan"
+in APPPATH/Views/layout_admin/Services/detail_services.php on line 59.
+ 1 APPPATH/Views/layout_admin/Services/detail_services.php(59): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_admin/Services/detail_services.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/layout_admin/content.php(4): view()
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_admin/content.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 9 APPPATH/Views/layout_admin/wrapper.php(4): view()
+10 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_admin/wrapper.php')
+11 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+13 APPPATH/Controllers/Services_admin.php(99): view()
+14 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Services_admin->detail_services()
+15 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+16 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+17 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-02-28 00:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-28 00:59:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-28 01:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-28 01:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-28 01:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-28 01:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-28 01:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

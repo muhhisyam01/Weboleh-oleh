@@ -35,6 +35,10 @@
                                 <label for="inputAddress">Deskripsi Kegiatan</label>
                                 <textarea type="text" class="form-control" name="deskripsi" placeholder="Deskripsi Kegiatan" id="deskripsi" cols="30" rows="10" required></textarea>
                             </div>
+                            <div class="form-group">
+                                <label for="tanggal">Tanggal Kegiatan</label>
+                                <input type="date" class="form-control" name="tanggal" placeholder="Tanggal Kegiatan" id="tanggal" required></input>
+                            </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="inputAddress2">Foto 1</label>

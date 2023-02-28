@@ -84,6 +84,7 @@ class Kegiatan extends BaseController
       $this->KegiatanModel->save([
         'nama_kegiatan' => $this->request->getVar('nama_kegiatan'),
         'deskripsi' => $this->request->getVar('deskripsi'),
+        'tanggal' => $this->request->getVar('tanggal'),
         'foto_1' => $foto_1,
         'foto_2' => $foto_2,
       ]);

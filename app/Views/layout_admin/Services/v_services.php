@@ -19,7 +19,7 @@
         </div>
         <!-- [ breadcrumb ] end -->
         <!-- [ Main Content ] start -->
-        <a type="button" href="<?= base_url('add_kegiatan') ?>" class="btn  btn-secondary">Tambah Data</a>
+        <a type="button" href="<?= base_url('add_Services') ?>" class="btn  btn-secondary">Tambah Data</a>
         <br>
         <br>
         <div class="row">
@@ -41,28 +41,26 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                        <th>Nama Kegiatan</th>
-                                        <th>Deskripsi </th>
-                                        <th>Tanggal </th>
-                                        <th>Aksi</th>
+                                <th>Nama Services</th>
+                                <th>Deskripsi Services</th>
+                                <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                                 <?php 
                                     $no = 1;
-                                        foreach ($kegiatan as $get_kegiatan) { ?>
+                                        foreach ($Services as $get_services) { ?>
                                     <tr>
                                        <td><?=$no++?></td>
-                                       <td><?=$get_kegiatan['nama_kegiatan']?></td>
-                                       <td><?=$get_kegiatan['deskripsi']?></td>
-                                       <td><?=$get_kegiatan['tanggal']?></td>
+                                       <td><?=$get_services['nama_services']?></td>
+                                       <td><?=$get_services['deskripsi_services']?></td>
                                        <td>
-                                            <a href="<?= base_url('/detail_kegiatan/'.$get_kegiatan['id_kegiatan']) ?>" class="btn btn-info">Detail</a>
-                                            <a href="<?= base_url('/delete_kegiatan/'.$get_kegiatan['id_kegiatan']) ?>" class="btn btn-danger">Hapus</a>
+                                            <a href="<?= base_url('/detail_services/'.$get_services['id_services']) ?>" class="btn btn-info">Detail</a>
+                                            <a href="<?= base_url('/delete_services/'.$get_services['id_services']) ?>" class="btn btn-danger">Hapus</a>
                                        </td>
                                     </tr>
                                     <?php } ?>
-                                </tbody>
+                        </tbody>
                         </table>
 
                         </div>

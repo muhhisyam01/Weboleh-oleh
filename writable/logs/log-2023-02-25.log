@@ -1,0 +1,152 @@
+INFO - 2023-02-25 22:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-25 22:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-25 22:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-25 22:53:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-25 22:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-25 23:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-25 23:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-25 23:23:06 --> Undefined variable $kegiatan
+in APPPATH/Views/layout_user/menu/Kegiatan.php on line 218.
+ 1 APPPATH/Views/layout_user/menu/Kegiatan.php(218): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_user/menu/Kegiatan.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/layout_user/content.php(4): view()
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_user/content.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 9 APPPATH/Views/layout_user/wrapper.php(4): view()
+10 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_user/wrapper.php')
+11 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+13 APPPATH/Controllers/Home.php(67): view()
+14 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Kegiatan_Home()
+15 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+16 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+17 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-02-25 23:25:10 --> CodeIgniter\BaseModel::paginate(): Argument #3 ($page) must be of type ?int, string given, called in /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/app/Controllers/Home.php on line 62
+in SYSTEMPATH/BaseModel.php on line 1177.
+ 1 APPPATH/Controllers/Home.php(62): CodeIgniter\BaseModel->paginate()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Kegiatan_Home()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-02-25 23:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-25 23:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-25 23:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-25 23:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-25 23:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-25 23:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-25 23:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-25 23:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-25 23:37:48 --> Call to undefined method App\Models\KegiatanModel::tampil_kegiatan
+in SYSTEMPATH/Model.php on line 840.
+ 1 APPPATH/Controllers/Home.php(64): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Kegiatan_Home()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-02-25 23:49:46 --> Call to a member function order_by() on null
+in APPPATH/Controllers/Home.php on line 65.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Kegiatan_Home()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-02-25 23:50:14 --> Too few arguments to function App\Controllers\Home::Kegiatan_Home(), 0 passed in /home/code/Desktop/MULTI TEKNO/Weboleh-oleh/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 58.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Kegiatan_Home()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-02-25 23:50:33 --> Call to undefined method App\Models\KegiatanModel::order_by
+in SYSTEMPATH/Model.php on line 840.
+ 1 APPPATH/Controllers/Home.php(65): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Kegiatan_Home()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-02-25 23:53:46 --> Cannot use object of type CodeIgniter\Pager\Pager as array
+in APPPATH/Views/layout_user/menu/Kegiatan.php on line 222.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 4 APPPATH/Views/layout_user/content.php(4): view()
+ 5 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_user/content.php')
+ 6 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 8 APPPATH/Views/layout_user/wrapper.php(4): view()
+ 9 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_user/wrapper.php')
+10 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+12 APPPATH/Controllers/Home.php(68): view()
+13 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Kegiatan_Home()
+14 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+15 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+16 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-02-25 23:55:09 --> Call to a member function orderBy() on null
+in APPPATH/Controllers/Home.php on line 62.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Kegiatan_Home()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-02-25 23:56:19 --> Call to a member function orderBy() on null
+in APPPATH/Controllers/Home.php on line 62.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Kegiatan_Home()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-02-25 23:57:01 --> Cannot use object of type CodeIgniter\Pager\Pager as array
+in APPPATH/Views/layout_user/menu/Kegiatan.php on line 222.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 4 APPPATH/Views/layout_user/content.php(4): view()
+ 5 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_user/content.php')
+ 6 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 8 APPPATH/Views/layout_user/wrapper.php(4): view()
+ 9 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_user/wrapper.php')
+10 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+12 APPPATH/Controllers/Home.php(68): view()
+13 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Kegiatan_Home()
+14 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+15 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+16 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-02-25 23:57:15 --> Cannot use object of type CodeIgniter\Pager\Pager as array
+in APPPATH/Views/layout_user/menu/Kegiatan.php on line 236.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 4 APPPATH/Views/layout_user/content.php(4): view()
+ 5 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_user/content.php')
+ 6 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 8 APPPATH/Views/layout_user/wrapper.php(4): view()
+ 9 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout_user/wrapper.php')
+10 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+12 APPPATH/Controllers/Home.php(68): view()
+13 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Kegiatan_Home()
+14 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+15 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+16 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-02-25 23:58:56 --> Call to undefined method App\Models\KegiatanModel::getResultArray
+in SYSTEMPATH/Model.php on line 840.
+ 1 APPPATH/Controllers/Home.php(64): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->Kegiatan_Home()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')

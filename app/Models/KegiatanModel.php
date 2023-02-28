@@ -7,12 +7,11 @@ class KegiatanModel extends Model
 {
 
     protected $table = 'tb_kegiatan';
-    protected $allowedFields = ['nama_kegiatan', 'deskripsi','foto_1','foto_2'];
+    protected $allowedFields = ['nama_kegiatan', 'deskripsi','tanggal','foto_1','foto_2'];
 
     public function get_kegiatan()
     {
-        return $this->db->table('tb_kegiatan')->get()->getResultArray();
-        
+        return  $this->db->table('tb_kegiatan')->orderBy('id_kegiatan','desc')->get()->getResultArray();
     }
 
     public function edit_kegiatan($id_kegiatan)
