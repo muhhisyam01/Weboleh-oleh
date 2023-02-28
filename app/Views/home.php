@@ -290,100 +290,26 @@
             </div>
         </div>
         <div class="flex">
+            <?php foreach ($Services as $get_services) { ?>
             <!--Start single service item-->
             <div class="single-service-item">
                 <div class="icon-holder">
-                    <span class="flaticon-arrow"></span>
+                    <!-- <span class="flaticon-arrow"></span> -->
                     <div class="overlay-icon">
-                        <span class="flaticon-arrow"></span>    
+                        <!-- <span class="flaticon-arrow"></span>     -->
+                        <img src="<?= base_url()."/img/services/".$get_services['foto'] ?>" alt="" style="width: 150px; height: 150px;">
                     </div>
                 </div>
                 <div class="text-holder">
-                    <h3><a href="service-single.html">Pembuatan Legalitas UKM</a></h3> 
+                    <h3><a href="service-single.html"><?= $get_services['nama_services']; ?> </a></h3> 
                     <p>Penjelasan Legalitas UKM</p>
-                    <a class="readmore" href="frontend/service-single.html">Selanjutnya<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
+                    <a class="readmore" href="<?= base_url('/detail_services_user/'.$get_services['id_services']) ?>" > Detail<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
                 </div>    
             </div>    
             <!--Start single service item-->
-            <!--Start single service item-->
-            <div class="single-service-item bg-one">
-                <div class="icon-holder">
-                    <span class="flaticon-business"></span>
-                    <div class="overlay-icon">
-                        <span class="flaticon-business"></span> 
-                    </div>
-                </div>
-                <div class="text-holder">
-                    <h3><a href="frontend/service-single.html">Pusat Oleh-Oleh Mamuju Sulbar</a></h3> 
-                    <p>Penejelasan Pusat Oleh-Oleh Mamuju Sulbar</p>
-                    <a class="readmore" href="frontend/service-single.html">Selanjutnya<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
-                </div>    
-            </div>    
-            <!--Start single service item-->
-            <!--Start single service item-->
-            <div class="single-service-item">
-                <div class="icon-holder">
-                    <span class="flaticon-idea-2"></span>
-                    <div class="overlay-icon">
-                        <span class="flaticon-idea-2"></span> 
-                    </div>
-                </div>
-                <div class="text-holder">
-                    <h3><a href="service-single.html">Pembuatan Website</a></h3> 
-                    <p>Kami Menyediakan Service Pembuatan WEBSITE bagi rekan-rekan pelaku usaha UMKM yang ingin go DIGITAL sehingga 
-                        mempermudah dalam promosi.</p>
-                    <a class="readmore" href="service-single.html">Selanjutnya<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
-                </div>    
-            </div>    
-            <!--Start single service item-->
+            <?php } ?>
         </div>
-        <div class="flex">
-            <!--Start single service item-->
-            <div class="single-service-item bg-one">
-                <div class="icon-holder">
-                    <span class="flaticon-chart"></span>
-                    <div class="overlay-icon">
-                        <span class="flaticon-chart"></span> 
-                    </div>
-                </div>
-                <div class="text-holder">
-                    <h3><a href="service-single.html">Pembuatan Toko Online</a></h3> 
-                    <p>Penjelasan Toko Online</p>
-                    <a class="readmore" href="service-single.html">Selanjutnya<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
-                </div>    
-            </div>    
-            <!--Start single service item-->
-            <!--Start single service item-->
-            <div class="single-service-item">
-                <div class="icon-holder">
-                    <span class="flaticon-business-1"></span>
-                    <div class="overlay-icon">
-                        <span class="flaticon-business-1"></span> 
-                    </div>
-                </div>
-                <div class="text-holder">
-                    <h3><a href="service-single.html">Informasi Komoditas Sulawesi Barat</a></h3> 
-                    <p>Penjelasan Informasi Komoditas Sulawesi Barat</p>
-                    <a class="readmore" href="service-single.html">Selanjutnya<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
-                </div>    
-            </div>    
-            <!--Start single service item-->
-            <!--Start single service item-->
-            <!-- <div class="single-service-item bg-one">
-                <div class="icon-holder">
-                    <span class="flaticon-upload"></span>
-                    <div class="overlay-icon">
-                        <span class="flaticon-upload"></span> 
-                    </div>
-                </div>
-                <div class="text-holder">
-                    <h3><a href="service-single.html">Working Space</a></h3> 
-                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally.</p>
-                    <a class="readmore" href="service-single.html">Read More<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
-                </div>    
-            </div>     -->
-            <!--Start single service item-->
-        </div>
+        <!-- here flex 2 -->
     </div>
 </section>
 <!--End services area-->

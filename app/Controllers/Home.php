@@ -4,6 +4,7 @@ namespace App\Controllers;
 use App\Models\KegiatanModel;
 use App\Models\ProfilModel;
 use App\Models\ProdukModel;
+use App\Models\ServicesModel;
 
 
 class Home extends BaseController
@@ -11,20 +12,24 @@ class Home extends BaseController
     protected $KegiatanModel;
     protected $ProfilModel;
     protected $ProdukModel;
+    protected $ServicesModel;
 
     public function __construct()
      {
           $this->KegiatanModel = new KegiatanModel();
           $this->ProfilModel = new ProfilModel();
           $this->ProdukModel = new ProdukModel();
+          $this->ServicesModel = new ServicesModel();
+          
      }
 
     public function index()
     {
        $data = [
           'profil' => $this->ProfilModel->get_profil(),
-            'title' => 'home',
-            'isi' => 'home',
+          'Services' => $this->ServicesModel->get_Services(),
+          'title' => 'home',
+          'isi' => 'home',
             
        ];
         echo view('layout_user/wrapper.php',$data);

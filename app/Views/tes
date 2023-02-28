@@ -1,0 +1,47 @@
+<div class="flex">
+            <!--Start single service item-->
+            <div class="single-service-item bg-one">
+                <div class="icon-holder">
+                    <span class="flaticon-chart"></span>
+                    <div class="overlay-icon">
+                        <span class="flaticon-chart"></span> 
+                    </div>
+                </div>
+                <div class="text-holder">
+                    <h3><a href="service-single.html">Pembuatan Toko Online</a></h3> 
+                    <p>Penjelasan Toko Online</p>
+                    <a class="readmore" href="service-single.html">Selanjutnya<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
+                </div>    
+            </div>    
+            <!--Start single service item-->
+            <!--Start single service item-->
+            <div class="single-service-item">
+                <div class="icon-holder">
+                    <span class="flaticon-business-1"></span>
+                    <div class="overlay-icon">
+                        <span class="flaticon-business-1"></span> 
+                    </div>
+                </div>
+                <div class="text-holder">
+                    <h3><a href="service-single.html">Informasi Komoditas Sulawesi Barat</a></h3> 
+                    <p>Penjelasan Informasi Komoditas Sulawesi Barat</p>
+                    <a class="readmore" href="service-single.html">Selanjutnya<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
+                </div>    
+            </div>    
+            <!--Start single service item-->
+            <!--Start single service item-->
+            <!-- <div class="single-service-item bg-one">
+                <div class="icon-holder">
+                    <span class="flaticon-upload"></span>
+                    <div class="overlay-icon">
+                        <span class="flaticon-upload"></span> 
+                    </div>
+                </div>
+                <div class="text-holder">
+                    <h3><a href="service-single.html">Working Space</a></h3> 
+                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally.</p>
+                    <a class="readmore" href="service-single.html">Read More<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
+                </div>    
+            </div>     -->
+            <!--Start single service item-->
+        </div>
