@@ -302,8 +302,8 @@
                 </div>
                 <div class="text-holder">
                     <h3><a href="service-single.html"><?= $get_services['nama_services']; ?> </a></h3> 
-                    <p>Penjelasan Legalitas UKM</p>
-                    <a class="readmore" href="<?= base_url('/detail_services_user/'.$get_services['id_services']) ?>" > Detail<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
+                    <!-- <p>Penjelasan Legalitas UKM</p> -->
+                    <a class="readmore" href="<?= base_url('detail_services_user'.$get_services['id_services']) ?>" > Detail<i class="fa fa-angle-right" aria-hidden="true"></i></a>   
                 </div>    
             </div>    
             <!--Start single service item-->
@@ -481,7 +481,7 @@
 <!--End customer feedback --> 
 
 <!--Start latest blog area-->
-<section class="latest-blog-area sec-pd-one">
+<!-- <section class="latest-blog-area sec-pd-one">
     <div class="container">
         <div class="sec-title">
             <span>Kegiatan</span>
@@ -489,7 +489,6 @@
             <h1>Berita terbaru</h1>
         </div>
         <div class="row">
-            <!--Start single latest blog-->
             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                 <div class="single-blog-post">
                     <div class="img-holder">
@@ -504,10 +503,6 @@
                     </div>
                     <hr>
                     <div class="text-holder">
-                        <!-- <span>Written By</span> -->
-                        <!-- <ul class="meta-info">
-                            <li><a href="#">Mark Fletcher, 17th Aug 2017</a></li>
-                        </ul> -->
                         <h3><a class="blog-title" href="blog-single.html">Kegiatan terbaru </a></h3> 
                         <div class="text">
                             <p>Penjelasan Kegiatan</p>
@@ -518,16 +513,9 @@
                     </div>
                 </div>
             </div>
-            <!--End single latest blog-->
-            <!--Start single latest blog-->
-            
-            <!--End single latest blog-->
-            <!--Start single latest blog-->
-            
-            <!--End single latest blog-->
         </div>
     </div>
-</section>
+</section> -->
 <!--End latest blog area--> 
 
 <!--Start Brand area-->  

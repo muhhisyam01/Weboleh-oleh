@@ -310,7 +310,7 @@
                     </div>
                     <!--End single sidebar-->
                     <!--Start single sidebar--> 
-                    <div class="single-sidebar">
+                    <!-- <div class="single-sidebar">
                         <div class="sec-title">
                             <h3>Latest Products</h3>
                             <span class="border"></span>
@@ -398,7 +398,7 @@
                                 </div> 
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                     <!--End single sidebar-->
                 </div>    
             </div>

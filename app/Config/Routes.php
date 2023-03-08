@@ -37,11 +37,13 @@ $routes->get('/', 'Home::index');
 $routes->get('/login', 'Home::login');
 $routes->get('/About', 'Home::About');
 $routes->get('/Services', 'Home::Services');
+$routes->get('/detail_services_user(:segment)', 'Home::detail_services_user/$1');
 $routes->get('/Kegiatan_Home', 'Home::Kegiatan_Home');
 $routes->get('/KegiatanDetail(:segment)', 'Home::KegiatanDetail/$1');
 $routes->get('/Shop', 'Home::Shop');
 $routes->get('/ShopDetail(:segment)', 'Home::ShopDetail/$1');
 $routes->get('/Contact', 'Home::Contact');
+
 
 
 // admin

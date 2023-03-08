@@ -256,7 +256,7 @@
                                 <div class="title-holder">
                                     <div class="top clearfix">
                                         <h5><?= $get_produk['nama_produk'] ?></h5>
-                                        <h4 class="rate"><?= $get_produk['harga'] ?></h4>
+                                        <h4 class="rate">Rp. <?= $get_produk['harga'] ?></h4>
                                     </div>
                                     <div class="bottom">
                                         <div class="cart-button pull-left">
@@ -306,7 +306,7 @@
                     </div> -->
                     <!--End single sidebar-->
                     <!--Start single sidebar--> 
-                    <div class="single-sidebar">
+                    <!-- <div class="single-sidebar">
                         <div class="sec-title">
                             <h3>Latest Products</h3>
                             <span class="border"></span>
@@ -394,7 +394,7 @@
                                 </div> 
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                     <!--End single sidebar-->
                 </div>    
             </div>

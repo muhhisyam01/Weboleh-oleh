@@ -231,9 +231,9 @@
                 <div class="blog-post">
                     <div class="single-blog-post">
                         <div class="img-holder">
-                            <!-- <img src="frontend/images/blog/blog-single.jpg" alt="Awesome Image"> -->
+                           
                             <img src="<?= base_url()."/img/kegiatan/".$kegiatan_detial['foto_1'] ?>" alt="Awesome Image" >
-                            <!-- <img src="<?= base_url()."/img/kegiatan/".$kegiatan_detial['foto_2'] ?>" alt="Awesome Image" > -->
+                           
                         </div>
                         <div class="text-holder">
                             <span>Written By</span>
@@ -252,18 +252,14 @@
                    
                 </div>
             </div>
-            <!--Start sidebar Wrapper-->
-            <div class="col-xl-3 col-lg-4 col-md-9 col-sm-12">
+            <!-- <div class="col-xl-3 col-lg-4 col-md-9 col-sm-12">
                 <div class="sidebar-wrapper">
-                    <!--Start single sidebar-->
                     <div class="single-sidebar">
                         <form class="search-form" action="#">
 							<input placeholder="Search..." type="text">
 							<button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
 						</form>
                     </div>
-                    <!--End single sidebar-->
-                    <!--Start single sidebar-->
                     <div class="single-sidebar">
                         <div class="sec-title">
                             <h3>Categories</h3>
@@ -276,10 +272,8 @@
                             <li><a href="#">Organization<span>(4)</span></a></li>
                         </ul>
                     </div>
-                    <!--End single sidebar-->
                 </div>    
-            </div>
-            <!--End Sidebar Wrapper-->  
+            </div> -->
         </div>
     </div>
 </section> 

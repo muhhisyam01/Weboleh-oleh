@@ -152,74 +152,35 @@
         </div>
     </div>
     <!---End sticky header-->
-</header> 
+</header>
 
-<section class="breadcrumb-area" style="background-image: url(images/resources/breadcrumb-bg.jpg);">
-	<div class="container">
-	    <div class="row">
-	        <div class="col-md-12">
-	            <div class="breadcrumbs">
-	                <h1>Services</h1>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-	<div class="breadcrumb-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="inner-content">
-                        <div class="left pull-left">
-                            <ul>
-                                <li><a href="/">Home</a></li>
-                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-                                <li class="active">Services</li>
-                            </ul>
-                        </div>
-                        <div class="right pull-right">
-                            <a href="#">
-                                <span><i class="fa fa-share-alt" aria-hidden="true"></i>Share</span> 
-                            </a>   
-                        </div>
-                    </div>    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="services-page-area">
+<section id="single-service-area">
     <div class="container">
         <div class="row">
-            <!--Start single item-->
-            <?php
-                foreach ($Services as $get_services) { ?>
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                <div class="single-service-box">
-                    <div class="img-holder">
-                        <img src="<?= base_url()."/img/services/".$get_services['foto'] ?>" alt="Awesome Image"> 
-                        <div class="icon-holder">
-                            <span class="flaticon-arrow"></span>
-                        </div>
-                        <div class="overlay-style-one">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="service-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <div class="col-xl-4 col-lg-4 col-md-9 col-sm-12 pull-right">
+                <div class="left-sidebar">
+                    <!--Start single sidebar-->
+                    <div class="single-sidebar">
+                        <ul class="page-links">
+                            <li><a class="active" href="#"><?= $services_detial['nama_services']?> </a></li>      
+                        </ul>
+                    </div>
+                    <!--End single sidebar-->
+                </div>
+            </div> 
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 pull-left">
+                <div class="content-box">
+                    <div class="top-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="text-holder">
+                                    <p><?= $services_detial['deskripsi_services']?></p>
                                 </div>
                             </div>
-                        </div> 
-                    </div> 
-                    <div class="text-holder">
-                        <h3 class="title"><a href="service-single.html"><?= $get_services['nama_services'];  ?> </a></h3>
-                        <p><?= $get_services['deskripsi_services'];  ?></p>
-                        <a class="readmore" href="<?= base_url('detail_services_user'.$get_services['id_services']) ?>">Detail<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </div>   
-                </div>       
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--End single item-->
-            <?php } ?>
-           
-           
         </div>
     </div>
 </section>

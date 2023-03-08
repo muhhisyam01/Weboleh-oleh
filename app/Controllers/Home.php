@@ -13,6 +13,7 @@ class Home extends BaseController
     protected $ProfilModel;
     protected $ProdukModel;
     protected $ServicesModel;
+    
 
     public function __construct()
      {
@@ -55,11 +56,24 @@ class Home extends BaseController
     {
        $data = [
             'title' => 'Services',
-            
+            'Services' => $this->ServicesModel->get_Services(),
             'isi' => 'layout_user/menu/Services.php',
        ];
         echo view('layout_user/wrapper.php',$data);
     }
+
+    public function  detail_services_user($id_services)
+    {
+       $data = [
+            'title' => 'Services Detail',
+            'services_detial' => $this->ServicesModel->edit_Services($id_services),
+            'isi' => 'layout_user/menu/Services_detail.php',
+       ];
+        echo view('layout_user/wrapper.php',$data);
+
+     echo 'hallow halaman services detail';
+    }
+
     public function Kegiatan_Home()
     {
        $data = [
@@ -88,11 +102,13 @@ class Home extends BaseController
 
     public function Shop()
     {
+          
        $data = [
             'title' => 'Shop',
             'produk' =>$this->ProdukModel->paginate(9, 'produk'),
             'pager' =>$this->ProdukModel->pager,
             'isi' => 'layout_user/menu/Shop.php',
+            
        ];
         echo view('layout_user/wrapper.php',$data);
     }
